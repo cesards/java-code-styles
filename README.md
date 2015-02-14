@@ -42,6 +42,8 @@ Based on Square's Java style settings used in their Android projects.
     * Wrapping and Braces ▻ Method anonations: `Wrap if long`
     * Wrapping and Braces ▻ Field anonations: `Wrap if long`
     * Wrapping and Braces ▻ Parameter anonations: `Wrap if long`
+    * Wrapping and Braces ▻ Local variable anonations: `Wrap if long`
+    * Wrapping and Braces ▻ Enums constants: `Wrap always`
     * Blank Lines ▻ In declarations: `1`
     * Blank Lines ▻ In code: `1`
     * Blank Lines ▻ Before } : `0`
@@ -88,6 +90,7 @@ Based on Square's Java style settings used in their Android projects.
     * Wrapping and Braces ▻ Field anonations: `Wrap if long`
     * Wrapping and Braces ▻ Parameter anonations: `Wrap if long`
     * Wrapping and Braces ▻ Local variable annotations: `Wrap if long`
+    * Wrapping and Braces ▻ Enums constants: `Wrap always`
     * Blank Lines ▻ In declarations: `1`
     * Blank Lines ▻ In code: `1`
     * Blank Lines ▻ Before } : `0`
@@ -152,6 +155,11 @@ Same as `DogmaLabs` except:
 * __Java__
     * Tabs and Indents
         * `Tab size: 4 / Indent: 4 / Continuation indent: 8`
+    * Wrapping and Braces ▻ Class anonations: `Wrap always`
+    * Wrapping and Braces ▻ Method anonations: `Wrap always`
+    * Wrapping and Braces ▻ Field anonations: `Wrap always`
+    * Wrapping and Braces ▻ Parameter anonations: `Wrap if long`
+    * Wrapping and Braces ▻ Local variable annotations: `Wrap always`
 * __XML__
     * Tabs and Indents
         * `Tab size: 4 / Indent: 4 / Continuation indent: 4`
