@@ -152,6 +152,11 @@ Same as `DogmaLabs` except:
 * __Groovy__
     * Tabs and Indents
         * `Tab size: 4 / Indent: 4 / Continuation indent: 8`
+    * Wrapping and Braces ▻ Class anonations: `Wrap always`
+    * Wrapping and Braces ▻ Method anonations: `Wrap always`
+    * Wrapping and Braces ▻ Field anonations: `Wrap always`
+    * Wrapping and Braces ▻ Parameter anonations: `Wrap if long`
+    * Wrapping and Braces ▻ Local variable annotations: `Wrap always`
 * __Java__
     * Tabs and Indents
         * `Tab size: 4 / Indent: 4 / Continuation indent: 8`
