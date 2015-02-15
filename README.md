@@ -54,7 +54,6 @@ Based on Square's Java style settings used in their Android projects.
         * `Tab size: 2 / Indent: 2 / Continuation indent: 4`
     * Spaces
         * Before Left Brace ▻ `✓ Array initializer left brace`
-        * Within ▻ `✓ Array initializer left brace`
     * Wrapping and Braces ▻ Keep when reformatting
         * `✗ Line breaks`
         * `✗ Comment at first column`
