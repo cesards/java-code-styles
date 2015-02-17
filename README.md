@@ -117,7 +117,7 @@ Based on Square's Java style settings used in their Android projects.
             * Import all other imports
             * / blank line /
             * import static  all other imports
-    * Code eneration ▻ Comment Code
+    * Code generation ▻ Comment Code
         * `✗ Line comment at first column`
         * `✗ Block comment at first column`
 
