@@ -1,18 +1,28 @@
 #!/bin/bash
-# Installs Square's IntelliJ configs into your user configs.
+# Installs Lyft's IntelliJ configs into your user configs.
 
-echo "Installing Square code style configs..."
+echo "Installing Lyft code style configs..."
 
-for i in $HOME/Library/Preferences/IntelliJIdea*/codestyles \
-         $HOME/Library/Preferences/IdeaIC*/codestyles \
-         $HOME/Library/Preferences/AndroidStudio*/codestyles \
-         $HOME/.IntelliJIdea*/config/codestyles \
-         $HOME/.IdeaIC*/config/codestyles \
-         $HOME/.AndroidStudio*/config/codestyles
+codestyles='/codestyles/'
+
+for i in $HOME/Library/Preferences/IntelliJIdea* \
+         $HOME/Library/Preferences/IdeaIC* \
+         $HOME/Library/Preferences/AndroidStudio* \
+         $HOME/.IntelliJIdea*/config \
+         $HOME/.IdeaIC*/config \
+         $HOME/.AndroidStudio*/config
 do
-  cp -frv $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/configs/* $i 2> /dev/null
+	dir=$i$codestyles
+	if [[ -d $i ]]; then
+		if [[ ! -d $dir ]]; then
+			echo "make $dir"
+			mkdir $dir
+		fi
+
+		cp -frv $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/configs/* $dir 2> /dev/null
+	fi
 done
 
 echo "Done."
 echo ""
-echo "Restart IntelliJ and/or AndroidStudio, go to preferences, and apply 'Square' or 'SquareAndroid'."
+echo "Restart IntelliJ and/or AndroidStudio, go to preferences, and apply 'LyftAndroid'."
