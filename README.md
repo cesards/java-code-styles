@@ -5,6 +5,16 @@ List of changed default AndroidStudio code styles with Square ones + some person
 
 Based on Square's Java style settings used in their Android projects.
 
+Installation
+------------
+* Run the `install.sh` script.
+* Restart IntelliJ if it's running.
+* Open IntelliJ Project Settings -> Code Styles, change the code style for the
+   project to the one you want.
+
+Code Styles changes from the Android Studio ones
+------------------------------------------------
+
 #### DogmaLabs (Personal)
 
 * __General__
@@ -196,10 +206,3 @@ Same as `DogmaLabs` except:
    * Other
       * Spaces
          * `✓ In empty tag`
-
-Installation
-------------
-* Run the `install.sh` script.
-* Restart IntelliJ if it's running.
-* Open IntelliJ Project Settings -> Code Styles, change the code style for the
-   project to the one you want.
