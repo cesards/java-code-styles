@@ -25,4 +25,4 @@ done
 
 echo "Done."
 echo ""
-echo "Restart IntelliJ and/or AndroidStudio, go to preferences, and apply 'LyftAndroid'."
+echo "Restart IntelliJ and/or AndroidStudio, go to preferences, and apply 'KeradGames'."
