@@ -70,8 +70,8 @@
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
     <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="0" />
     <option name="BLANK_LINES_AROUND_METHOD_IN_INTERFACE" value="0" />
-    <option name="ALIGN_MULTILINE_CHAINED_METHODS" value="true" />
-    <option name="ALIGN_MULTILINE_TERNARY_OPERATION" value="true" />
+    <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
+    <option name="ALIGN_MULTILINE_FOR" value="false" />
     <option name="SPACE_WITHIN_EMPTY_METHOD_CALL_PARENTHESES" value="true" />
     <option name="CALL_PARAMETERS_WRAP" value="1" />
     <option name="METHOD_PARAMETERS_WRAP" value="1" />
@@ -99,8 +99,8 @@
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
     <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="0" />
     <option name="BLANK_LINES_AROUND_METHOD_IN_INTERFACE" value="0" />
-    <option name="ALIGN_MULTILINE_CHAINED_METHODS" value="true" />
-    <option name="ALIGN_MULTILINE_TERNARY_OPERATION" value="true" />
+    <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
+    <option name="ALIGN_MULTILINE_FOR" value="false" />
     <option name="ALIGN_MULTILINE_METHOD_BRACKETS" value="true" />
     <option name="SPACE_WITHIN_BRACES" value="true" />
     <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
@@ -143,7 +143,7 @@
           <match>
             <AND>
               <NAME>xmlns:android</NAME>
-              <XML_NAMESPACE />
+              <XML_NAMESPACE>Namespace:</XML_NAMESPACE>
             </AND>
           </match>
         </rule>
@@ -151,7 +151,7 @@
           <match>
             <AND>
               <NAME>xmlns:.*</NAME>
-              <XML_NAMESPACE />
+              <XML_NAMESPACE>Namespace:</XML_NAMESPACE>
             </AND>
           </match>
           <order>BY_NAME</order>
