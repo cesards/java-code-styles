@@ -179,27 +179,11 @@ Same as `DogmaLabs` except:
 * __Groovy__
    * Tabs and Indents
       * `Tab size: 4 / Indent: 4 / Continuation indent: 8`
-   * Wrapping and Braces ▻ Method declaration parameters: `Wrap if long`
-      * `✓ Align when multiline`
-   * Wrapping and Braces ▻ Chained method calls: `Wrap always`
-      * `✓ Align when multiline`
-   * Wrapping and Braces ▻ for() statement: `Wrap if long`
-      * `✓ Align when multiline`
-   * Wrapping and Braces ▻ Ternary operation: `Wrap if long`
-      * `✓ Align when multiline`
 
 * __Java__
    * Tabs and Indents
       * `Tab size: 4 / Indent: 4 / Continuation indent: 8`
-   * Wrapping and Braces ▻ Method declaration parameters: `Wrap if long`
-      * `✓ Align when multiline`
-   * Wrapping and Braces ▻ for() statement: `Wrap if long`
-      * `✓ Align when multiline`
-   * Wrapping and Braces ▻ Chained method calls: `Wrap always`
-      * `✓ Align when multiline`
-   * Wrapping and Braces ▻ Ternary operation: `Wrap if long`
-      * `✓ Align when multiline`
-   
+
 * __XML__
    * Tabs and Indents
       * `Tab size: 4 / Indent: 4 / Continuation indent: 4`
