@@ -5,6 +5,16 @@ List of changed default AndroidStudio code styles with Square ones + some person
 
 Based on Square's Java style settings used in their Android projects.
 
+Installation
+------------
+* Run the `install.sh` script.
+* Restart IntelliJ if it's running.
+* Open IntelliJ Project Settings -> Code Styles, change the code style for the
+   project to the one you want.
+
+Code Styles changes from the Android Studio ones
+------------------------------------------------
+
 #### DogmaLabs (Personal)
 
 * __General__
@@ -169,37 +179,14 @@ Same as `DogmaLabs` except:
 * __Groovy__
    * Tabs and Indents
       * `Tab size: 4 / Indent: 4 / Continuation indent: 8`
-   * Wrapping and Braces ▻ Method declaration parameters: `Wrap if long`
-      * `✓ Align when multiline`
-   * Wrapping and Braces ▻ Chained method calls: `Wrap always`
-      * `✓ Align when multiline`
-   * Wrapping and Braces ▻ for() statement: `Wrap if long`
-      * `✓ Align when multiline`
-   * Wrapping and Braces ▻ Ternary operation: `Wrap if long`
-      * `✓ Align when multiline`
 
 * __Java__
    * Tabs and Indents
       * `Tab size: 4 / Indent: 4 / Continuation indent: 8`
-   * Wrapping and Braces ▻ Method declaration parameters: `Wrap if long`
-      * `✓ Align when multiline`
-   * Wrapping and Braces ▻ for() statement: `Wrap if long`
-      * `✓ Align when multiline`
-   * Wrapping and Braces ▻ Chained method calls: `Wrap always`
-      * `✓ Align when multiline`
-   * Wrapping and Braces ▻ Ternary operation: `Wrap if long`
-      * `✓ Align when multiline`
-   
+
 * __XML__
    * Tabs and Indents
       * `Tab size: 4 / Indent: 4 / Continuation indent: 4`
    * Other
       * Spaces
          * `✓ In empty tag`
-
-Installation
-------------
-* Run the `install.sh` script.
-* Restart IntelliJ if it's running.
-* Open IntelliJ Project Settings -> Code Styles, change the code style for the
-   project to the one you want.
