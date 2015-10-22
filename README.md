@@ -74,7 +74,6 @@ Code Styles changes from the Android Studio ones
       * Before Left Brace ▻ `✓ Array initializer left brace`
       * Within ▻ `✓ Code braces`
       * Within ▻ `✓ Array initializer braces`
-      * Within ▻ `✓ Empty method declaration parenthesis`
    * Wrapping and Braces ▻ Keep when reformatting
       * `✗ Line breaks`
       * `✗ Comment at first column`
@@ -99,21 +98,24 @@ Code Styles changes from the Android Studio ones
    * Wrapping and Braces ▻ do ... while() statement
       * `Force braces: Always`
    * Wrapping and Braces ▻ try-with-resources: `Wrap if long`
-   * Wrapping and Braces ▻ Binary expressions: `Chop down if long`
+   * Wrapping and Braces ▻ Binary expressions: `Wrap if long`
       * `✓ Operation sign on next line`
    * Wrapping and Braces ▻ Assignment statement: `Wrap if long`
+      * `✓ Assignment sign on next line`
    * Wrapping and Braces ▻ Ternary operation: `Wrap if long`
       * `✓ ? and : signs on next line`
    * Wrapping and Braces ▻ Array initializer: `Wrap always`
+      * `✓ Align when multiline` 
       * `✓ New line after {`
       * `✓ Place } on new line`
    * Wrapping and Braces ▻ Assert statement: `Wrap if long`
+      * `✓ ':' signs on next line`
+   * Wrapping and Braces ▻ Enums constants: `Wrap always`
    * Wrapping and Braces ▻ Class anonations: `Wrap always`
    * Wrapping and Braces ▻ Method anonations: `Wrap always`
    * Wrapping and Braces ▻ Field anonations: `Wrap always`
    * Wrapping and Braces ▻ Parameter anonations: `Wrap if long`
    * Wrapping and Braces ▻ Local variable annotations: `Wrap always`
-   * Wrapping and Braces ▻ Enums constants: `Wrap always`
    * Blank Lines ▻ In declarations: `1`
    * Blank Lines ▻ In code: `1`
    * Blank Lines ▻ Before } : `0`
@@ -133,13 +135,19 @@ Code Styles changes from the Android Studio ones
    * JavaDoc ▻ Other
       * `✓ Wrap at right margin`
       * `✗ Generate "<p/> on empty lines`
-      * `✓ Do not wrap one line comments`
       * `✓ Preserve line feeds`
    * Imports
-      * `✗ Use fully qualified class names in javadoc`
+      * `✗ Use fully qualified class names`
       * `Class count to use import with *: 999`
       * `Names count to use static import with *: 999`
       * Import Layout (3 in total)
+         * Import android.*
+         * Import com.*
+         * Import junit.*
+         * Import net.*
+         * Import org.*
+         * Import java.*
+         * Import javax.*
          * Import all other imports
          * / blank line /
          * import static  all other imports
@@ -149,25 +157,32 @@ Code Styles changes from the Android Studio ones
 
 * __XML__
    * Tabs and Indents
-      * `Tab size: 2 / Indent: 2 / Continuation indent: 2`
+      * `Tab size: 4 / Indent: 4 / Continuation indent: 4`
    * Other
       * `✓ Keep line breaks`
       * `Keep blank lines: 1`
       * Wrap attributes : `Wrap always`
       * Spaces
-         * `✗ In empty tag`
+         * `✓ In empty tag`
    * Arrangement ▻ Additional Settings
       * ` Use current mode (toggled in the Reformat Code dialog)`
    * Android ▻ AndroidManifest.xml
       * `✗ Insert line break before first attribute`
       * `✓ Group tags with the same name`
    * Android ▻ Value Resource Files and Selectors
-      * Wrap attributes : `Wrap always`
+      * Wrap attributes : `Wrap if long`
    * Android ▻ Layout Files
-      * `✗ Insert line break before first attribute`
+      * Wrap attributes : `Wrap always`
+      * `✓ Insert line break before first attribute`
+      * `✓ Insert line break after last attribute`
       * `✗ Insert blank line before tag`
    * Android ▻ Other XML resource files
       * `✗ Insert line break before first attribute`
+
+
+
+
+__REPASAR ESTO --> BAD__
 
 #### Kerad Games (Company)
 
@@ -187,6 +202,4 @@ Same as `DogmaLabs` except:
 * __XML__
    * Tabs and Indents
       * `Tab size: 4 / Indent: 4 / Continuation indent: 4`
-   * Other
-      * Spaces
-         * `✓ In empty tag`
+
