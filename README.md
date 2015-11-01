@@ -15,7 +15,7 @@ Installation
 Code Styles changes from the Android Studio __Default__ nes
 ------------------------------------------------
 
-#### KG (Kerad Games)
+#### KeradGamesAndroid (Kerad Games)
 
 * __General__
    * `Right margin (columns) : 120`
@@ -125,6 +125,7 @@ Code Styles changes from the Android Studio __Default__ nes
       * `✓ Insert line break after last attribute`
       * `✗ Insert blank line before tag`
    * Android ▻ Other XML resource files
+      * Wrap attributes : `Do not wrap`
       * `✗ Insert line break before first attribute`
 
 * __Groovy__
@@ -161,27 +162,28 @@ Code Styles changes from the Android Studio __Default__ nes
    * Imports
       * `Class count to use import with *: 999`
       * `Names count to use static import with *: 999`
+   
+<br>
 
+#### CesardsAndroid (Own)
 
-
-__REPASAR ESTO --> BAD__
-
-#### Kerad Games (Company)
-
-Same as `DogmaLabs` except:
+Same as `KeradGamesAndroid` except:
 
 * __General__
-   * `Tab size: 4 / Indent: 4 / Continuation indent: 8`
+   * `Tab size: 2 / Indent: 2 / Continuation indent: 4`
    
 * __Groovy__
    * Tabs and Indents
-      * `Tab size: 4 / Indent: 4 / Continuation indent: 8`
+      * `Tab size: 2 / Indent: 2 / Continuation indent: 4`
 
 * __Java__
    * Tabs and Indents
-      * `Tab size: 4 / Indent: 4 / Continuation indent: 8`
+      * `Tab size: 2 / Indent: 2 / Continuation indent: 4`
+   * JavaDoc ▻ Invalid tags
+      * `✓ Keep invalid tags`
+      * `✓ Keep empty @throws tags`
 
 * __XML__
    * Tabs and Indents
-      * `Tab size: 4 / Indent: 4 / Continuation indent: 4`
+      * `Tab size: 2 / Indent: 2 / Continuation indent: 4`
 
