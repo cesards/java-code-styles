@@ -1,28 +1,29 @@
 #!/bin/bash
-# Installs Lyft's IntelliJ configs into your user configs.
+# Installs cesards's IntelliJ/AndroidStudio configs into your user configs.
 
-echo "Installing Lyft code style configs..."
+echo "Installing cesards code style configs..."
 
-codestyles='/codestyles/'
+CONFIGS="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/configs"
 
-for i in $HOME/Library/Preferences/IntelliJIdea* \
-         $HOME/Library/Preferences/IdeaIC* \
+for i in $HOME/Library/Preferences/IntelliJIdea*  \
+         $HOME/Library/Preferences/IdeaIC*        \
          $HOME/Library/Preferences/AndroidStudio* \
-         $HOME/.IntelliJIdea*/config \
-         $HOME/.IdeaIC*/config \
+         $HOME/.IntelliJIdea*/config              \
+         $HOME/.IdeaIC*/config                    \
          $HOME/.AndroidStudio*/config
 do
-	dir=$i$codestyles
-	if [[ -d $i ]]; then
-		if [[ ! -d $dir ]]; then
-			echo "make $dir"
-			mkdir $dir
-		fi
+  if [ -d $i ]; then
 
-		cp -frv $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/configs/* $dir 2> /dev/null
-	fi
+    # Install codestyles
+    mkdir -p $i/codestyles
+    cp -frv "$CONFIGS/codestyles"/* $i/codestyles
+
+    # Install inspections
+    mkdir -p $i/inspection
+    cp -frv "$CONFIGS/inspection"/* $i/inspection
+  fi
 done
 
 echo "Done."
 echo ""
-echo "Restart IntelliJ and/or AndroidStudio, go to preferences, and apply 'KeradGames'."
+echo "Restart IntelliJ and/or AndroidStudio, go to preferences, and apply 'KeradGames', 'cesards', 'Square' or 'SquareAndroid'."
