@@ -131,7 +131,6 @@ Code Styles changes from the Android Studio __Default__ nes
    * Tabs and Indents
       * `Tab size: 4 / Indent: 4 / Continuation indent: 8`
    * Wrapping and Braces ▻ Keep when reformatting
-      * `✗ Line breaks`
       * `✗ Comment at first column`
    * Wrapping and Braces ▻ Extends / implements list: ` Wrap if long`
    * Wrapping and Braces ▻ Extends / implements keyword: `Wrap if long`
@@ -140,7 +139,7 @@ Code Styles changes from the Android Studio __Default__ nes
    * Wrapping and Braces ▻ Method declaration parameters: `Wrap if long`
       * `✗ Align when multiline`
    * Wrapping and Braces ▻ Method call arguments: `Wrap if long`
-   * Wrapping and Braces ▻ Chained method calls: `Wrap always`
+   * Wrapping and Braces ▻ Chained method calls: `Wrap if long`
    * Wrapping and Braces ▻ if() statement
       * `Force braces: Always`
    * Wrapping and Braces ▻ for() statement: `Wrap if long`
