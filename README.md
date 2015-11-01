@@ -1,7 +1,7 @@
 Java/Android Code Styles
 ================
 
-List of changed default AndroidStudio code styles with Square ones + some personal tweaks :-)
+List of __documented changed from the default AndroidStudio code styles__ based on the Square ones, some personal tweaks and Oracle coding styles and ex-company team mates arrangement.
 
 Based on Square's Java style settings used in their Android projects.
 
