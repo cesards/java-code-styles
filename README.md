@@ -1,7 +1,7 @@
 Java/Android Code Styles
 ================
 
-List of __documented code styles changes from the default ones in AndroidStudio __ based on the Square ones, some personal tweaks and Oracle coding styles and ex-company team mates arrangement.
+List of __documented code styles changes from the default ones in AndroidStudio__ based on the Square ones, some personal tweaks and Oracle coding styles and ex-company team mates arrangement.
 
 Based on Square's Java style settings used in their Android projects.
 
