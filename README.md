@@ -3,17 +3,16 @@ Java/Android Code Styles
 
 IntelliJ IDEA code style settings for Square's Java and Android projects.
 
-
 Installation
 ------------
 * Run the `install.sh` script.
 * Restart IntelliJ if it's running.
-* Open IntelliJ/Android Studio Project Settings -> Code Styles, change the code style for the
+* Open IntelliJ/AS Project Settings -> Code Styles, change the code style for the
    project to the one you want.
 
-Code Styles changes from the Android Studio __Default__ nes
+<br>
+Code styles changes from the AS default ones
 ------------------------------------------------
-
 #### KeradGamesAndroid (Kerad Games)
 
 * __General__
@@ -23,7 +22,7 @@ Code Styles changes from the Android Studio __Default__ nes
 * __Java__
    * Tabs and Indents
       * `Tab size: 4 / Indent: 4 / Continuation indent: 8`
-   * Spaces ▻ Before Left Brace 
+   * Spaces ▻ Before Left Brace
       * `✓ Array initializer left brace`
    * Spaces ▻ Within
       * `✓ Code braces`
@@ -57,7 +56,7 @@ Code Styles changes from the Android Studio __Default__ nes
    * Wrapping and Braces ▻ Ternary operation: `Wrap if long`
       * `✓ ? and : signs on next line`
    * Wrapping and Braces ▻ Array initializer: `Wrap always`
-      * `✓ Align when multiline` 
+      * `✓ Align when multiline`
       * `✓ New line after {`
       * `✓ Place } on new line`
    * Wrapping and Braces ▻ Assert statement: `Wrap if long`
@@ -161,7 +160,7 @@ Code Styles changes from the Android Studio __Default__ nes
    * Imports
       * `Class count to use import with *: 999`
       * `Names count to use static import with *: 999`
-   
+
 <br>
 
 #### CesardsAndroid (Own)
@@ -170,7 +169,7 @@ Same as `KeradGamesAndroid` except:
 
 * __General__
    * `Tab size: 2 / Indent: 2 / Continuation indent: 4`
-   
+
 * __Groovy__
    * Tabs and Indents
       * `Tab size: 2 / Indent: 2 / Continuation indent: 4`
@@ -186,8 +185,8 @@ Same as `KeradGamesAndroid` except:
    * Tabs and Indents
       * `Tab size: 2 / Indent: 2 / Continuation indent: 4`
 
+<br>
+
 License
 -------
-
 [![Public domain](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
-
