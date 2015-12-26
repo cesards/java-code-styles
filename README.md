@@ -1,9 +1,8 @@
 Java/Android Code Styles
 ================
 
-List of __documented code styles changes from the default ones in AndroidStudio __ based on the Square ones, some personal tweaks and Oracle coding styles and ex-company team mates arrangement.
+IntelliJ IDEA code style settings for Square's Java and Android projects.
 
-Based on Square's Java style settings used in their Android projects.
 
 Installation
 ------------
@@ -186,4 +185,9 @@ Same as `KeradGamesAndroid` except:
 * __XML__
    * Tabs and Indents
       * `Tab size: 2 / Indent: 2 / Continuation indent: 4`
+
+License
+-------
+
+[![Public domain](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
 
