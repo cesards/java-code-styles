@@ -31,11 +31,11 @@ Code styles changes from the AS default ones
 <a name="code_styles">
 #### Code Styles
 
-__`Right margin (columns) : 120`__
+   * __Right margin (columns) : 120__
 
-```xml
-<option name="RIGHT_MARGIN" value="120" />
-```
+   ```xml
+   <option name="RIGHT_MARGIN" value="120" />
+   ```
 
 <a name="java">
 ##### Java
@@ -43,22 +43,22 @@ __`Right margin (columns) : 120`__
 <a name="tabs_and_indents">
 ###### Tabs and Indents
 
- __`Tab size: 2 / Indent: 2 / Continuation indent: 4`__
+   * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
  
- ```xml
-<indentOptions>
-   <option name="INDENT_SIZE" value="2" />
-   <option name="CONTINUATION_INDENT_SIZE" value="4" />
-   <option name="TAB_SIZE" value="2" />
-</indentOptions>
-```
+   ```xml
+   <indentOptions>
+      <option name="INDENT_SIZE" value="2" />
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="2" />
+   </indentOptions>
+   ```
 
 <a name="spaces">
 ###### Spaces
 
 ▼__Before Left Brace__
 
-   __`✓ Array initializer left brace`__ <br>
+   * __✓ Array initializer left brace__ <br>
    ```xml
    <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
    ```
@@ -67,7 +67,7 @@ __`Right margin (columns) : 120`__
    ```
 
 ▼ __Within__
-   * __`✓ Code braces`__ <br>
+   * __✓ Code braces__ <br>
    ```xml
    <option name="SPACE_WITHIN_BRACES" value="true" />
    ```
@@ -75,7 +75,7 @@ __`Right margin (columns) : 120`__
    interface Abba { }
    ```
    
-   * __`✓ Array initializer braces`__ <br>
+   * __✓ Array initializer braces__ <br>
    ```xml
    <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
    ```
