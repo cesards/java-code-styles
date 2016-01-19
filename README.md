@@ -16,6 +16,7 @@ Code styles changes from the AS default ones
 #### CesardsAndroid (Own)
 
 * __`Right margin (columns) : 120`__
+   `<option name="RIGHT_MARGIN" value="120" />`
 
 * __Java__
    * Tabs and Indents
