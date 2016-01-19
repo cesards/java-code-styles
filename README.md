@@ -13,45 +13,81 @@ Installation
 <br>
 Code styles changes from the AS default ones
 ------------------------------------------------
-#### CesardsAndroid (Own)
+### CesardsAndroid
 
-* __`Right margin (columns) : 120`__ <br>
+- <a href="#code_styles">__Code Styles__</a>
+   - <a href="#java">__Java__</a> 
+      - <a href="#tabs_and_indents">__Tabs and Indents__</a>
+      - <a href="#spaces">__Spaces__</a>
+      - <a href="#wrapping_and_braces">__Wrapping and Braces__</a>
+      - <a href="#blank_lines">__Blank Lines__</a>
+      - <a href="#javadoc">__JavaDoc__</a>
+      - <a href="#imports">__Imports__</a>
+      - <a href="#arrangement">__Arrangement__</a>
+      - <a href="#code_generation">__Code Generation__</a>
+
+<br>
+
+<a name="code_styles">
+#### Code Styles
+
+__`Right margin (columns) : 120`__
+
 ```xml
 <option name="RIGHT_MARGIN" value="120" />
 ```
-* __Java__
-   * Tabs and Indents
-      * __`Tab size: 2 / Indent: 2 / Continuation indent: 4`__ <br>
-       ```xml
-      <indentOptions>
-         <option name="INDENT_SIZE" value="2" />
-         <option name="CONTINUATION_INDENT_SIZE" value="4" />
-         <option name="TAB_SIZE" value="2" />
-      </indentOptions>
-      ```
-   * Spaces ▻ Before Left Brace
-      * __`✓ Array initializer left brace`__ <br>
-      ```xml
-      <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
-      ```
-      ```java
-      int[] empty = new int[] {};
-      ```
-   * Spaces ▻ Within
-      * __`✓ Code braces`__ <br>
-      ```xml
-      <option name="SPACE_WITHIN_BRACES" value="true" />
-      ```
-      ```java
-      interface Abba { }
-      ```
-      * __`✓ Array initializer braces`__ <br>
-         ```xml
-         <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
-         ```
-         ```java
-         @SuppressWarnings({ "ALL" })
-         ```
+
+<a name="java">
+##### Java
+
+<a name="tabs_and_indents">
+###### Tabs and Indents
+
+ __`Tab size: 2 / Indent: 2 / Continuation indent: 4`__
+ 
+ ```xml
+<indentOptions>
+   <option name="INDENT_SIZE" value="2" />
+   <option name="CONTINUATION_INDENT_SIZE" value="4" />
+   <option name="TAB_SIZE" value="2" />
+</indentOptions>
+```
+
+<a name="spaces">
+###### Spaces
+
+▼__Before Left Brace__
+
+   __`✓ Array initializer left brace`__ <br>
+   ```xml
+   <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
+   ```
+   ```java
+   int[] empty = new int[] {};
+   ```
+
+▼ __Within__
+   * __`✓ Code braces`__ <br>
+   ```xml
+   <option name="SPACE_WITHIN_BRACES" value="true" />
+   ```
+   ```java
+   interface Abba { }
+   ```
+   
+   * __`✓ Array initializer braces`__ <br>
+   ```xml
+   <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
+   ```
+   ```java
+   @SuppressWarnings({ "ALL" })
+   ```
+   
+   
+   
+   
+   
+   
    * Wrapping and Braces ▻ Keep when reformatting
       * __`✗ Comment at first column`__
       * __`✓ Simple methods in one line`__
