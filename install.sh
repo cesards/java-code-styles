@@ -21,9 +21,12 @@ do
     # Install inspections
     mkdir -p $i/inspection
     cp -frv "$CONFIGS/inspection"/* $i/inspection
+
+    # Install templates
+    mkdir -p $i/inspection
+    cp -frv "$CONFIGS/templates"/* $i/templates
   fi
 done
 
 echo "Done."
 echo ""
-echo "Restart IntelliJ and/or AndroidStudio, go to preferences, and apply 'KeradGames', 'cesards', 'Square' or 'SquareAndroid'."
