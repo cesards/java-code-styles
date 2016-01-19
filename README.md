@@ -68,6 +68,7 @@ Code styles changes from the AS default ones
    ```
 
 ▼ __Within__
+   
    * __✓ Code braces__
    
    ```xml
@@ -86,17 +87,87 @@ Code styles changes from the AS default ones
    @SuppressWarnings({ "ALL" })
    ```
    
+<a name="wrapping_and_braces">
+###### Wrapping and Braces   
    
+▼ __Keep when reformatting__
+
+   * __✗ Comment at first column__
+
+   ```xml
+   <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
+   ```
+   ```java
+   // todo something
+   ```
    
+   * __✓ Simple methods in one line__
    
+   ```xml
+   <option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
+   ```
+   ```java
+   public void foo1(int i1,
+                   int i2,
+                   int i3,
+                   int i4,
+                   int i5,
+                   int i6,
+                   int i7) {}
+   ```
    
-   
-   * Wrapping and Braces ▻ Keep when reformatting
-      * __`✗ Comment at first column`__
-      * __`✓ Simple methods in one line`__
-      * __`✓ Simple classes in one line`__
-   * Wrapping and Braces ▻ Extends / implements list: __` Wrap if long`__
-   * Wrapping and Braces ▻ Extends / implements keyword: __`Wrap if long`__
+   * __✓ Simple classes in one line__
+
+   ```xml
+   <option name="KEEP_SIMPLE_CLASSES_IN_ONE_LINE" value="true" />
+   ```
+   ```java
+   new Object() { };
+   ```
+
+
+▼ __Extends / implements list__
+
+   __Wrap if long__
+   ```xml
+   <option name="EXTENDS_LIST_WRAP" value="1" />
+   ```
+   ```java
+   public class ThisIsASampleClass extends
+        C1 implements I1, I2, I3, I4,
+        I5 {
+   ```
+
+   * __Extends / implements keyword__
+
+   ```xml
+   <option name="EXTENDS_KEYWORD_WRAP" value="1" />
+   ```
+   ```java
+   public class ThisIsASampleClass
+        extends C1
+        implements I1, I2, I3, I4, I5 {
+   ```
+
+   * ____
+
+   ```xml
+   ```
+   ```java
+   ```
+
+   * ____
+
+   ```xml
+   ```
+   ```java
+   ```
+
+  
+  
+  
+  
+   * Wrapping and Braces ▻ : __`Wrap if long`__
    * Wrapping and Braces ▻ Throws list: __`Wrap if long`__
    * Wrapping and Braces ▻ Throws keyword: __`Wrap if long`__
    * Wrapping and Braces ▻ Method declaration parameters: __`Chop down if long`__
