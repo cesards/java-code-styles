@@ -17,37 +17,37 @@ Code styles changes from the AS default ones
 
 * __`Right margin (columns) : 120`__ <br>
    ```xml
-      <option name="RIGHT_MARGIN" value="120" />
+   <option name="RIGHT_MARGIN" value="120" />
    ```
 * __Java__
    * Tabs and Indents
       * __`Tab size: 2 / Indent: 2 / Continuation indent: 4`__ <br>
           ```xml
-            <indentOptions>
-               <option name="INDENT_SIZE" value="2" />
-               <option name="CONTINUATION_INDENT_SIZE" value="4" />
-               <option name="TAB_SIZE" value="2" />
-            </indentOptions>
+         <indentOptions>
+            <option name="INDENT_SIZE" value="2" />
+            <option name="CONTINUATION_INDENT_SIZE" value="4" />
+            <option name="TAB_SIZE" value="2" />
+         </indentOptions>
          ```
    * Spaces ▻ Before Left Brace
       * __`✓ Array initializer left brace`__ <br>
          ```xml
-            <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
+         <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
          ```
          ```java
-            int[] empty = new int[] {};
+         int[] empty = new int[] {};
          ```
    * Spaces ▻ Within
       * __`✓ Code braces`__ <br>
          ```xml
-             <option name="SPACE_WITHIN_BRACES" value="true" />
+         <option name="SPACE_WITHIN_BRACES" value="true" />
          ```
          ```java
          interface Abba { }
          ```
       * __`✓ Array initializer braces`__ <br>
          ```xml
-            <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
+         <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
          ```
          ```java
          @SuppressWarnings({ "ALL" })
