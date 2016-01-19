@@ -58,7 +58,8 @@ Code styles changes from the AS default ones
 
 ▼__Before Left Brace__
 
-   * __✓ Array initializer left brace__ <br>
+   * __✓ Array initializer left brace__
+   
    ```xml
    <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
    ```
@@ -67,7 +68,8 @@ Code styles changes from the AS default ones
    ```
 
 ▼ __Within__
-   * __✓ Code braces__ <br>
+   * __✓ Code braces__
+   
    ```xml
    <option name="SPACE_WITHIN_BRACES" value="true" />
    ```
@@ -75,7 +77,8 @@ Code styles changes from the AS default ones
    interface Abba { }
    ```
    
-   * __✓ Array initializer braces__ <br>
+   * __✓ Array initializer braces__
+   
    ```xml
    <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
    ```
