@@ -126,28 +126,103 @@ Code styles changes from the AS default ones
    ```
 
 
-▼ __Extends / implements list__
+▼ __Extends / implements list ▶ Wrap if long__
 
-   __Wrap if long__
-   ```xml
-   <option name="EXTENDS_LIST_WRAP" value="1" />
-   ```
-   ```java
-   public class ThisIsASampleClass extends
-        C1 implements I1, I2, I3, I4,
-        I5 {
-   ```
+```xml
+<option name="EXTENDS_LIST_WRAP" value="1" />
+```
+```java
+public class ThisIsASampleClass extends
+   C1 implements I1, I2, I3, I4,
+   I5 {
+```
 
-   * __Extends / implements keyword__
+   * __Extends / implements keyword ▶ Wrap if long__
 
    ```xml
    <option name="EXTENDS_KEYWORD_WRAP" value="1" />
    ```
    ```java
    public class ThisIsASampleClass
-        extends C1
-        implements I1, I2, I3, I4, I5 {
+      extends C1
+      implements I1, I2, I3, I4, I5 {
    ```
+
+▼ __Throws list ▶ Wrap if long__
+
+```xml
+<option name="THROWS_LIST_WRAP" value="1" />
+```
+```java
+public static void longerMethod() throws
+   Exception1, Exception2,
+   Exception3 {
+```
+
+   * __Throws keyword ▶ Wrap if long__
+
+   ```xml
+   <option name="THROWS_KEYWORD_WRAP" value="1" />
+   ```
+   ```java
+   public static void longerMethod()
+      throws Exception1, Exception2, Exception3 {
+   ```
+
+▼ __Method declaration parameters ▶ Chop down if long__
+
+```xml
+<option name="METHOD_PARAMETERS_WRAP" value="5" />
+```
+```java
+public void foo1(int i1,
+                 int i2,
+                 int i3,
+                 int i4,
+                 int i5,
+                 int i6,
+                 int i7) {
+```
+
+▼ __Method call arguments ▶ Chop down if long__
+
+```xml
+<option name="CALL_PARAMETERS_WRAP" value="5" />
+```
+```java
+foo1(0x0051,
+       0x0052,
+       0x0053,
+       0x0054,
+       0x0055,
+       0x0056,
+       0x0057);
+```
+
+   * __✓ Align when multiline__
+
+   ```xml
+   <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+   ```
+   ```java
+   foo1(0x0051,
+        0x0052,
+        0x0053,
+        0x0054,
+        0x0055,
+        0x0056,
+        0x0057);
+   ```
+
+▼ __Chained method calls ▶ Wrap if long__
+
+```xml
+<option name="METHOD_CALL_CHAIN_WRAP" value="1" />
+```
+```java
+super.getFoo().foo().getBar()
+               .bar();
+```
 
    * ____
 
@@ -156,22 +231,10 @@ Code styles changes from the AS default ones
    ```java
    ```
 
-   * ____
+  
+  
 
-   ```xml
-   ```
-   ```java
-   ```
 
-  
-  
-  
-  
-   * Wrapping and Braces ▻ : __`Wrap if long`__
-   * Wrapping and Braces ▻ Throws list: __`Wrap if long`__
-   * Wrapping and Braces ▻ Throws keyword: __`Wrap if long`__
-   * Wrapping and Braces ▻ Method declaration parameters: __`Chop down if long`__
-   * Wrapping and Braces ▻ Method call arguments: __`Wrap if long`__
    * Wrapping and Braces ▻ Chained method calls: __`Wrap if long`__
    * Wrapping and Braces ▻ if() statement
       * __`Force braces: Always`__
@@ -199,6 +262,10 @@ Code styles changes from the AS default ones
    * Wrapping and Braces ▻ Parameter anonations: __`Wrap if long`__
    * Wrapping and Braces ▻ Local variable annotations: __`Wrap always`__
    * Wrapping and Braces ▻ Annotation parameters: __`Wrap if long`__
+   
+
+
+
    * Blank Lines ▻ In declarations: __`1`__
    * Blank Lines ▻ In code: __`1`__
    * Blank Lines ▻ Before } : __`0`__
