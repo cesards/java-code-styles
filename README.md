@@ -21,13 +21,13 @@ Code styles changes from the AS default ones
 * __Java__
    * Tabs and Indents
       * __`Tab size: 2 / Indent: 2 / Continuation indent: 4`__ <br>
-        `
+       ```xml
          <indentOptions>
             <option name="INDENT_SIZE" value="2" />
             <option name="CONTINUATION_INDENT_SIZE" value="4" />
             <option name="TAB_SIZE" value="2" />
          </indentOptions>
- `
+      ```
    * Spaces ▻ Before Left Brace
       * __`✓ Array initializer left brace`__
    * Spaces ▻ Within
