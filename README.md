@@ -15,12 +15,19 @@ Code styles changes from the AS default ones
 ------------------------------------------------
 #### CesardsAndroid (Own)
 
-* __`Right margin (columns) : 120`__
+* __`Right margin (columns) : 120`__ <br>
    `<option name="RIGHT_MARGIN" value="120" />`
 
 * __Java__
    * Tabs and Indents
-      * __`Tab size: 2 / Indent: 2 / Continuation indent: 4`__
+      * __`Tab size: 2 / Indent: 2 / Continuation indent: 4`__ <br>
+        `
+         <indentOptions>
+            <option name="INDENT_SIZE" value="2" />
+            <option name="CONTINUATION_INDENT_SIZE" value="4" />
+            <option name="TAB_SIZE" value="2" />
+         </indentOptions>
+ `
    * Spaces ▻ Before Left Brace
       * __`✓ Array initializer left brace`__
    * Spaces ▻ Within
