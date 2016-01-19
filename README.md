@@ -122,7 +122,7 @@ Code styles changes from the AS default ones
    <option name="KEEP_SIMPLE_CLASSES_IN_ONE_LINE" value="true" />
    ```
    ```java
-   new Object() { };
+   new Object() {};
    ```
 
 
