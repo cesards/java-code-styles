@@ -335,12 +335,12 @@ int y = 2 > 3 ?
    ```
    ```java
    int x = (3 + 4 + 5 + 6) * (7
-        + 8 + 9 + 10) * (11
-        + 12 + 13 + 14
-        + 0xFFFFFFFF);
+           + 8 + 9 + 10) * (11
+           + 12 + 13 + 14
+           + 0xFFFFFFFF);
 
    assert i + j + k + l + n + m
-        <= 2 : "assert description";
+           <= 2 : "assert description";
    ```
    
 
