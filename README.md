@@ -431,10 +431,11 @@ int[] a = new int[]{1,
 ```
 ```java
 assert i + j + k + l + n + m <= 2 :
-		"assert description";
+	"assert description";
 ```
 
 	* __✓ `:` signs on next line__
+	
 	```xml
    	<option name="ASSERT_STATEMENT_COLON_ON_NEXT_LINE" value="true" />
    	```
