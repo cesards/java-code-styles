@@ -33,9 +33,9 @@ Code styles changes from the AS default ones
 
    * __Right margin (columns) : 120__
 
-   ```xml
-   <option name="RIGHT_MARGIN" value="120" />
-   ```
+   	```xml
+   	<option name="RIGHT_MARGIN" value="120" />
+   	```
 
 <a name="java">
 ##### Java
@@ -45,13 +45,13 @@ Code styles changes from the AS default ones
 
    * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
  
-   ```xml
-   <indentOptions>
-      <option name="INDENT_SIZE" value="2" />
-      <option name="CONTINUATION_INDENT_SIZE" value="4" />
-      <option name="TAB_SIZE" value="2" />
-   </indentOptions>
-   ```
+   	```xml
+   	<indentOptions>
+    	<option name="INDENT_SIZE" value="2" />
+      	<option name="CONTINUATION_INDENT_SIZE" value="4" />
+      	<option name="TAB_SIZE" value="2" />
+   	</indentOptions>
+   	```
 
 <a name="spaces">
 ###### Spaces
@@ -60,32 +60,32 @@ Code styles changes from the AS default ones
 
    * __✓ Array initializer left brace__
    
-   ```xml
-   <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
-   ```
-   ```java
-   int[] empty = new int[] {};
-   ```
+   	```xml
+   	<option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
+   	```
+   	```java
+   	int[] empty = new int[] {};
+   	```
 
 ▼ __Within__
    
    * __✓ Code braces__
    
-   ```xml
-   <option name="SPACE_WITHIN_BRACES" value="true" />
-   ```
-   ```java
-   interface Abba { }
-   ```
+   	```xml
+   	<option name="SPACE_WITHIN_BRACES" value="true" />
+   	```
+   	```java
+   	interface Abba { }
+   	```
    
    * __✓ Array initializer braces__
    
-   ```xml
-   <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
-   ```
-   ```java
-   @SuppressWarnings({ "ALL" })
-   ```
+   	```xml
+   	<option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
+   	```
+   	```java
+   	@SuppressWarnings({ "ALL" })
+   	```
    
 <a name="wrapping_and_braces">
 ###### Wrapping and Braces   
@@ -94,36 +94,36 @@ Code styles changes from the AS default ones
 
    * __✗ Comment at first column__
 
-   ```xml
-   <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
-   ```
-   ```java
-   // todo something
-   ```
+   	```xml
+   	<option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
+   	```
+   	```java
+   	// todo something
+   	```
    
    * __✓ Simple methods in one line__
    
-   ```xml
-   <option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
-   ```
-   ```java
-   public void foo1(int i1,
-                   int i2,
-                   int i3,
-                   int i4,
-                   int i5,
-                   int i6,
-                   int i7) {}
+   	```xml
+   	<option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
+   	```
+   	```java
+   	public void foo1(int i1,
+    				int i2,
+                   	int i3,
+                   	int i4,
+                   	int i5,
+                   	int i6,
+                   	int i7) {}
    ```
    
    * __✓ Simple classes in one line__
 
-   ```xml
-   <option name="KEEP_SIMPLE_CLASSES_IN_ONE_LINE" value="true" />
-   ```
-   ```java
-   new Object() {};
-   ```
+   	```xml
+   	<option name="KEEP_SIMPLE_CLASSES_IN_ONE_LINE" value="true" />
+   	```
+   	```java
+   	new Object() {};
+   	```
 
 ▼ __Extends / implements list ⇨ Wrap if long__
 
@@ -132,8 +132,8 @@ Code styles changes from the AS default ones
 ```
 ```java
 public class ThisIsASampleClass extends
-   C1 implements I1, I2, I3, I4,
-   I5 {
+	C1 implements I1, I2, I3, I4,
+   	I5 {
 ```
 
    * __Extends / implements keyword ⇨ Wrap if long__
@@ -141,11 +141,11 @@ public class ThisIsASampleClass extends
    ```xml
    <option name="EXTENDS_KEYWORD_WRAP" value="1" />
    ```
-   ```java
-   public class ThisIsASampleClass
-      extends C1
-      implements I1, I2, I3, I4, I5 {
-   ```
+   	```java
+   	public class ThisIsASampleClass
+   		extends C1
+      	implements I1, I2, I3, I4, I5 {
+   	```
 
 ▼ __Throws list ⇨ Wrap if long__
 
@@ -154,19 +154,19 @@ public class ThisIsASampleClass extends
 ```
 ```java
 public static void longerMethod() throws
-   Exception1, Exception2,
-   Exception3 {
+	Exception1, Exception2,
+   	Exception3 {
 ```
 
    * __Throws keyword ⇨ Wrap if long__
 
-   ```xml
-   <option name="THROWS_KEYWORD_WRAP" value="1" />
-   ```
-   ```java
-   public static void longerMethod()
-      throws Exception1, Exception2, Exception3 {
-   ```
+   	```xml
+   	<option name="THROWS_KEYWORD_WRAP" value="1" />
+   	```
+   	```java
+   	public static void longerMethod()
+      	throws Exception1, Exception2, Exception3 {
+   	```
 
 ▼ __Method declaration parameters ⇨ Chop down if long__
 
