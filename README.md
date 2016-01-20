@@ -434,9 +434,9 @@ assert i + j + k + l + n + m <= 2 :
 	"assert description";
 ```
 
-	* __✓ `:` signs on next line__
+   * __✓ `:` signs on next line__
 	
-	```xml
+   	```xml
    	<option name="ASSERT_STATEMENT_COLON_ON_NEXT_LINE" value="true" />
    	```
    	```java
