@@ -479,7 +479,7 @@ __Local variable anonations ⇨ Wrap always__
 final int localVariable;
 ```
 
-▼ __Annotation paramters ⇨ Chow down if long__  
+▼ __Annotation parameters ⇨ Chow down if long__  
 
 ```xml
 <option name="ANNOTATION_PARAMETER_WRAP" value="5" />
@@ -489,7 +489,7 @@ final int localVariable;
         param2 = "value2")
 ```
 
-	* __✓ Align when multiline__
+   * __✓ Align when multiline__
 	
 	```xml
 	<option name="ALIGN_MULTILINE_ANNOTATION_PARAMETERS" value="true" />
