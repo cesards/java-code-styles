@@ -681,33 +681,47 @@ public void foo1() {
    
 __Class count to use import with `*` ⇨ 999__
 
+```xml
+<option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999" />
+```
+
 __Names count to use static import with `*` ⇨ 999__
+
+```xml
+<option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999" />
+```
 
 __Import Layout__
 
+```xml
+<package name="android" withSubpackages="true" static="false" />
+<package name="com" withSubpackages="true" static="false" />
+<package name="junit" withSubpackages="true" static="false" />
+<package name="net" withSubpackages="true" static="false" />
+<package name="org" withSubpackages="true" static="false" />
+<package name="java" withSubpackages="true" static="false" />
+<package name="javax" withSubpackages="true" static="false" />
+<package name="" withSubpackages="true" static="false" />
+<emptyLine />
+<package name="" withSubpackages="true" static="true" />
+```
 ```java
 import android.*
 import com.*
-import com.*
-import com.*
+import junit.*
+import net.*
+import org.*
+import java.*
+import javax.*
+import all other imports
+<blank line>
+import static  all other imports
 ```
    
 
 
 
 
-
-
-         * __``__
-         * __`Import `__
-         * __`Import junit.*`__
-         * __`Import net.*`__
-         * __`Import org.*`__
-         * __`Import java.*`__
-         * __`Import javax.*`__
-         * __`Import all other imports`__
-         * __`<blank line>`__
-         * __`import static  all other imports`__
    * Code generation ▻ Comment Code
          * __`✗ Line comment at first column`__
          * __`✗ Block comment at first column`__
