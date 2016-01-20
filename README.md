@@ -125,7 +125,6 @@ Code styles changes from the AS default ones
    new Object() {};
    ```
 
-
 ▼ __Extends / implements list ⇨ Wrap if long__
 
 ```xml
@@ -214,7 +213,7 @@ foo1(0x0051,
          0x0057);
    ```
 
-▼ __Chained method calls ▶ Wrap if long__
+▼ __Chained method calls ⇨ Wrap if long__
 
 ```xml
 <option name="METHOD_CALL_CHAIN_WRAP" value="1" />
@@ -224,23 +223,57 @@ super.getFoo().foo().getBar()
                   .bar();
 ```
 
-* ____
+▼ __`if()` statement__
+
+   * __Force braces ⇨ Always__
+
+   ```xml
+   <option name="IF_BRACE_FORCE" value="3" />
+   ```
+   ```java
+   if (2 < 3) {
+      return;
+   } else if (2 > 3) {
+      return;
+   } else {
+      return;
+   }
+   ```
+
+▼ __`for()` statement ⇨ Wrap if long__
 
 ```xml
+<option name="FOR_STATEMENT_WRAP" value="1" />
 ```
 ```java
+for (int i = 0; i < 0xFFFFFF;
+      i += 2)
 ```
-
   
+   * __✗ Align when multiline__
+
+   ```xml
+   <option name="ALIGN_MULTILINE_FOR" value="false" />
+   ```
+   ```java
+  for (int i = 0; i < 0xFFFFFF;
+                i += 2)
+   ```
   
+   * __Force braces ⇨ Always__
+
+   ```xml
+   <option name="FOR_BRACE_FORCE" value="3" />
+   ```
+   ```java
+   for (int i = 0; i < 0xFFFFFF; i += 2) {
+      System.out.println(i);
+   }
+   ```
 
 
-   * Wrapping and Braces ▻ Chained method calls: __`Wrap if long`__
-   * Wrapping and Braces ▻ if() statement
-      * __`Force braces: Always`__
-   * Wrapping and Braces ▻ for() statement: __`Wrap if long`__
-      * __`✗ Align when multiline`__
-      * __`Force braces: Always`__
+
+
    * Wrapping and Braces ▻ while() statement
       * __`Force braces: Always`__
    * Wrapping and Braces ▻ do ... while() statement
