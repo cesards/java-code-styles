@@ -17,7 +17,7 @@ Code styles changes from the AS default ones
 
 - <a href="#code_styles">__Code Styles__</a>
    - <a href="#java">__Java__</a> 
-      - <a href="#tabs_and_indents">__Tabs and Indents__</a>
+      - <a href="#java_tabs_and_indents">__Tabs and Indents__</a>
       - <a href="#spaces">__Spaces__</a>
       - <a href="#wrapping_and_braces">__Wrapping and Braces__</a>
       - <a href="#blank_lines">__Blank Lines__</a>
@@ -25,7 +25,11 @@ Code styles changes from the AS default ones
       - <a href="#imports">__Imports__</a>
       - <a href="#arrangement">__Arrangement__</a>
       - <a href="#code_generation">__Code Generation__</a>
-
+   - <a href="#xml">__XML__</a>
+   	  - <a href="#xml_tabs_and_indents">__Tabs and Indents__</a>
+   	  - <a href="#other">__Other__</a>
+   	  - <a href="#arrangement">__Arrangement__</a>
+   	  - <a href="#android">__Android__</a>
 <br>
 
 <a name="code_styles">
@@ -40,7 +44,7 @@ Code styles changes from the AS default ones
 <a name="java">
 ##### Java
 
-<a name="tabs_and_indents">
+<a name="java_tabs_and_indents">
 ###### Tabs and Indents
 
    * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
@@ -718,21 +722,106 @@ import all other imports
 import static  all other imports
 ```
    
+<a name="code_generation">
+###### Code Generation
+
+__Comment Code__
+
+   * __✗ Line comment at first column__
+	```xml
+	<option name="LINE_COMMENT_AT_FIRST_COLUMN" value="false" />
+	```
+
+   * __✗ Block comment at first column__
+	```xml
+	<option name="BLOCK_COMMENT_AT_FIRST_COLUMN" value="false" />
+	```
+
+<a name="xml">
+##### XML      
+
+<a name="tabs_and_indents">
+###### Tabs and Indents
+
+   * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
+ 
+   	```xml
+   	<indentOptions>
+    	<option name="INDENT_SIZE" value="2" />
+   		<option name="TAB_SIZE" value="2" />
+   	</indentOptions>
+   	```
+
+<a name="other">
+###### Other
+
+__✓ Keep line breaks__
+  
+```xml
+<option name="XML_KEEP_LINE_BREAKS" value="true" />
+```
+
+__Keep blank lines ⇨ 1__
+
+```xml
+<option name="XML_KEEP_BLANK_LINES" value="1" />
+```
+```xml
+<application-components>
+
+    <description>Our product makes development a real
+      pleasure. It decreases the time you spend on routine,
+      repetitive.
+    </description>
+
+</application-components>
+```
+
+__Wrap attributes ⇨ Wrap always__
+
+```xml
+<option name="XML_ATTRIBUTE_WRAP" value="2" />
+```
+```xml
+<option name="workspace"
+	value="true"/>
+```
+
+__✗ Align attrivutes__
+```xml
+<option name="XML_ALIGN_ATTRIBUTES" value="false" />
+```
+```xml
+<option name="workspace"
+	value="true"/>
+```
+   
+__Spaces__   
+
+   * __✗ In empty tag__
+   ```xml
+   <option name="XML_SPACE_INSIDE_EMPTY_TAG" value="false" />
+   ```
+   ```xml
+   <option name="workspace"/>
+   ```
+   
+<a name="arrangement">
+###### Arrangement
+
+
+
+<a name="android">
+###### Android
 
 
 
 
-   * Code generation ▻ Comment Code
-         * __`✗ Line comment at first column`__
-         * __`✗ Block comment at first column`__
+       
 
-* __XML__
-   * Tabs and Indents
-      * __`Tab size: 2 / Indent: 2 / Continuation indent: 4`__
-   * Other
-      * __`✓ Keep line breaks`__
-      * __`Keep blank lines: 1`__
-      * Wrap attributes : __`Wrap always`__
+
+
+
    * Arrangement ▻ Additional Settings
       * __` Use current mode (toggled in the Reformat Code dialog)`__
    * Android ▻ Layout Files
