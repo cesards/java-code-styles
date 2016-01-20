@@ -549,35 +549,35 @@ public void foo1() {
 
 ▼ __Alignment__
 
-	* __✗ Align parameter descriptions__
+   * __✗ Align parameter descriptions__
 	
    	```xml
    	<option name="JD_ALIGN_PARAM_COMMENTS" value="false" />
    	```
    	```java
    	/**
- 	  * @param i short named parameter description
-	  * @param longParameterName long named parameter description
-	  * @param missingDescription
-	  */
+ 	 * @param i short named parameter description
+	 * @param longParameterName long named parameter description
+	 * @param missingDescription
+	 */
 	```
 
-	* __✗ Align thrown exception descriptions__
+   * __✗ Align thrown exception descriptions__
 	
    	```xml
    	<option name="JD_ALIGN_EXCEPTION_COMMENTS" value="false" />
    	```
    	```java
    	/**
- 	  * @throws XXXException description.
- 	  * @throws YException description.
- 	  * @throws ZException
- 	  */
+ 	 * @throws XXXException description.
+ 	 * @throws YException description.
+ 	 * @throws ZException
+ 	 */
 	```
 
 ▼ __Blank lines__
 
-	* __✓ After parameter descriptions__
+   * __✓ After parameter descriptions__
 	
 	```xml
    	<option name="JD_ADD_BLANK_AFTER_PARM_COMMENTS" value="true" />
@@ -590,7 +590,7 @@ public void foo1() {
  	 */
 	```
 	
-	* __✓ After return tag__
+   * __✓ After return tag__
 
 	```xml
    	<option name="JD_ADD_BLANK_AFTER_RETURN" value="true" />
@@ -607,27 +607,78 @@ public void foo1() {
 
 ▼ __Invalid tags__
 
+   * __✗ Keep empty `@param` tags__
 
+	```xml
+   	<option name="JD_KEEP_EMPTY_PARAMETER" value="false" />
+   	```
+   
+   * __✗ Keep empty `@return` tags__
+ 
+	```xml
+	<option name="JD_KEEP_EMPTY_RETURN" value="false" />
+	```
+
+   * __✗ Keep empty `@throws` tags__
+   
+	```xml
+	<option name="JD_KEEP_EMPTY_EXCEPTION" value="false" />
+	```
 
 ▼ __Other__
 
+   * __✓ Wrap at right margin__
+
+	```xml
+	<option name="WRAP_COMMENTS" value="true" />
+	```
+	```java
+	/**
+	 * This is a method description that is
+	 * long enough to exceed right margin.
+	 * <p>
+	 * Another paragraph of the description
+	 * placed after blank line.
+	 * <p>
+	 * Line with manual line feed.
+	 */
+	```
+
+   * __✗ Generate `<p/>` on empty lines__
+
+	```xml
+  	<option name="JD_P_AT_EMPTY_LINES" value="false" />
+	```
+	```java
+	/**
+	 * This is a method description that is
+	 * long enough to exceed right margin.
+	 *
+	 * Another paragraph of the description
+	 * placed after blank line.
+	 *
+	 * Line with manual line feed.
+	 */
+	```
+
+   * __✓ Preserve line feeds__
+
+	```xml
+	  <option name="JD_PRESERVE_LINE_FEEDS" value="true" />
+	```
+	```java
+	/**
+	 * Another paragraph of the description
+	 * placed after blank line.
+	 * <p/>
+	 * Line with manual
+	 * line feed.
+	 */
+	```
 
 
-
-
-
-
-
-   * JavaDoc ▻ Blank lines
-      * __``__
-      * __``__
-   * JavaDoc ▻ Invalid tags
-      * __`✗ Keep empty @param tags`__
-      * __`✗ Keep empty @return tags`__
-   * JavaDoc ▻ Other
-      * __`✓ Wrap at right margin`__
-      * __`✗ Generate "<p/> on empty lines`__
-      * __`✓ Preserve line feeds`__
+   
+   
    * Imports
       * __`Class count to use import with '*': 999`__
       * __`Names count to use static import with '*': 999`__
