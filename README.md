@@ -353,14 +353,14 @@ int[] a =
     	new int[]{1, 2, 0x0052, 0x0053, 0x0054};
 ``` 
 
-	 * __✓ Assignment sign on next line__
+   * __✓ Assignment sign on next line__
    
    ```xml
    <option name="PLACE_ASSIGNMENT_SIGN_ON_NEXT_LINE" value="true" />
    ```
    ```java
    int[] a
-		      = new int[]{1, 2, 0x0052, 0x0053, 0x0054};
+   			= new int[]{1, 2, 0x0052, 0x0053, 0x0054};
    ```
 
 ▼ __Ternary operation ⇨ Wrap if long__  
@@ -370,7 +370,7 @@ int[] a =
 ```
 ```java
 int y = 2 > 3 ? 7 + 8 + 9 :
-     	11 + 12 + 13;
+	  11 + 12 + 13;
 ```  
 
    * __✓ `?` and `:` signs on next line__
@@ -380,7 +380,7 @@ int y = 2 > 3 ? 7 + 8 + 9 :
    ```
    ```java
    int y = 2 > 3 ? 7 + 8 + 9
-         : 11 + 12 + 13;
+   		 : 11 + 12 + 13;
    ```
  
  
