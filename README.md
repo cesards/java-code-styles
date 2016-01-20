@@ -676,15 +676,30 @@ public void foo1() {
 	 */
 	```
 
+<a name="imports">
+###### Imports
+   
+__Class count to use import with `*` ⇨ 999__
 
+__Names count to use static import with `*` ⇨ 999__
+
+__Import Layout__
+
+```java
+import android.*
+import com.*
+import com.*
+import com.*
+```
    
-   
-   * Imports
-      * __`Class count to use import with '*': 999`__
-      * __`Names count to use static import with '*': 999`__
-      * Import Layout (3 in total)
-         * __`Import android.*`__
-         * __`Import com.*`__
+
+
+
+
+
+
+         * __``__
+         * __`Import `__
          * __`Import junit.*`__
          * __`Import net.*`__
          * __`Import org.*`__
