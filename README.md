@@ -396,21 +396,21 @@ int[] a = new int[]{1,
         0x0054};
 ```
 
-	* __✓ New line after `{`__
+	* __✓ New line after `{`__<br>
 	* __✓ Place `}` on new line__
 	```xml
-   <option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
-   <option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
-   ```
-   ```java
+   	<option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
+   	<option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
+   	```
+   	```java
 	int[] a = new int[]{
-        1,
-        2,
-        0x0052,
-        0x0053,
-        0x0054
+	        1,
+	        2,
+	        0x0052,
+	        0x0053,
+	        0x0054
 	};
-   ```
+   	```
 	
 
 
