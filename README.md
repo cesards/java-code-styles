@@ -271,16 +271,80 @@ for (int i = 0; i < 0xFFFFFF;
    }
    ```
 
+▼ __`while()` statement__
+
+   * __Force braces ⇨ Always__
+
+   ```xml
+   <option name="WHILE_BRACE_FORCE" value="3" />
+   ```
+   ```java
+   while (x < 50000) {
+      x++;
+   }
+   ```
+
+▼ __`do { } while()` statement__
+
+   * __Force braces ⇨ Always__
+
+   ```xml
+   <option name="DOWHILE_BRACE_FORCE" value="3" />
+   ```
+   ```java
+   do {
+      x++;
+   } while (x < 10000);
+   ```
+
+▼ __try-with-resources ⇨ Wrap if long__
+
+```xml
+<option name="RESOURCE_LIST_WRAP" value="1" />
+```
+```java
+try (MyResource r1 = getResource();
+     MyResource r2 = null) {
+    doSomething();
+}
+```
+   
+▼ __Binary expressions ⇨ Wrap if long__  
+   
+```xml
+<option name="BINARY_OPERATION_WRAP" value="1" />
+```
+```java
+int x = (3 + 4 + 5 + 6) *
+        (7 + 8 + 9 + 10) *
+        (11 + 12 + 13 + 14 +
+                0xFFFFFFFF);
+
+assert i + j + k + l + n +
+	    m <=
+	    2 : "assert description";
+int y = 2 > 3 ?
+        7 + 8 + 9 :
+        11 + 12 + 13;
+``` 
+   
+   * __✓ Operation sign on next line__
+   
+   ```xml
+   <option name="BINARY_OPERATION_SIGN_ON_NEXT_LINE" value="true" />
+   ```
+   ```java
+   int x = (3 + 4 + 5 + 6) * (7
+        + 8 + 9 + 10) * (11
+        + 12 + 13 + 14
+        + 0xFFFFFFFF);
+
+   assert i + j + k + l + n + m
+        <= 2 : "assert description";
+   ```
+   
 
 
-
-   * Wrapping and Braces ▻ while() statement
-      * __`Force braces: Always`__
-   * Wrapping and Braces ▻ do ... while() statement
-      * __`Force braces: Always`__
-   * Wrapping and Braces ▻ try-with-resources: __`Wrap if long`__
-   * Wrapping and Braces ▻ Binary expressions: __`Wrap if long`__
-      * __`✓ Operation sign on next line`__
    * Wrapping and Braces ▻ Assignment statement: __`Wrap if long`__
       * __`✓ Assignment sign on next line`__
    * Wrapping and Braces ▻ Ternary operation: __`Wrap if long`__
