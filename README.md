@@ -370,7 +370,7 @@ int[] a =
 ```
 ```java
 int y = 2 > 3 ? 7 + 8 + 9 :
-	11 + 12 + 13;
+	      11 + 12 + 13;
 ```  
 
    * __✓ `?` and `:` signs on next line__
@@ -379,8 +379,8 @@ int y = 2 > 3 ? 7 + 8 + 9 :
    <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true" />
    ```
    ```java
-   int y = 2 > 3 ? 7 + 8 + 9
-   	: 11 + 12 + 13;
+	int y = 2 > 3 ? 7 + 8 + 9
+	        : 11 + 12 + 13;
    ```
  
  
