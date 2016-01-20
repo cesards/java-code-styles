@@ -811,7 +811,7 @@ __Spaces__
 __Layout Files__
 
    * __✗ Insert blank line before tag__
-   * 
+
 	```xml
 	<option name="LAYOUT_SETTINGS">
       <value>
