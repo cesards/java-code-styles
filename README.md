@@ -366,7 +366,7 @@ int[] a =
 ▼ __Ternary operation ⇨ Wrap if long__  
  
 ```xml
-  <option name="TERNARY_OPERATION_WRAP" value="1" />
+<option name="TERNARY_OPERATION_WRAP" value="1" />
 ```
 ```java
 int y = 2 > 3 ? 7 + 8 + 9 :
@@ -383,14 +383,38 @@ int y = 2 > 3 ? 7 + 8 + 9 :
 	        : 11 + 12 + 13;
    ```
  
+▼ __Array initializer ⇨ Wrap always__ 
  
- 
-   * Wrapping and Braces ▻ : __`Wrap if long`__
-      * __``__
-   * Wrapping and Braces ▻ Array initializer: `Wrap always`
-      * __`✓ Align when multiline`__
-      * __`✓ New line after {`__
-      * __`✓ Place } on new line`__
+```xml
+<option name="ARRAY_INITIALIZER_WRAP" value="2" />
+```
+```java
+int[] a = new int[]{1,
+        2,
+        0x0052,
+        0x0053,
+        0x0054};
+```
+
+	* __✓ New line after `{`__
+	* __✓ Place `}` on new line__
+	```xml
+   <option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
+   <option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
+   ```
+   ```java
+	int[] a = new int[]{
+        1,
+        2,
+        0x0052,
+        0x0053,
+        0x0054
+	};
+   ```
+	
+
+
+
    * Wrapping and Braces ▻ Assert statement: __`Wrap if long`__
       * __`✓ ':' signs on next line`__
    * Wrapping and Braces ▻ Enums constants: __`Wrap always`__
