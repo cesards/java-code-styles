@@ -499,6 +499,117 @@ final int localVariable;
     			 param2 = "value2")
 	```
 
+<a name="blank_lines">
+###### Blank Lines
+
+__In declarations ⇨ 1__  
+
+```xml
+  <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="1" />
+```
+```java
+public class Foo {
+
+    private int field1;
+    private int field2;
+}
+```
+
+__In code ⇨ 1__  
+
+```xml
+<option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
+```
+```java
+if (places != null && !places.isEmpty()) {
+	placeModelCollection = new ArrayList<>();
+
+	for (Place place : places) {
+		placeModelCollection.add(transform(place));
+	}
+}
+```
+
+__Before `}` ⇨ 0__
+
+```xml
+<option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="0" />
+```
+```java
+public void foo1() {
+    new Runnable() {
+        public void run() {
+        }
+    };
+}
+```
+
+<a name="javadoc">
+###### JavaDoc
+
+▼ __Alignment__
+
+	* __✗ Align parameter descriptions__
+	
+   	```xml
+   	<option name="JD_ALIGN_PARAM_COMMENTS" value="false" />
+   	```
+   	```java
+   	/**
+ 	  * @param i short named parameter description
+	  * @param longParameterName long named parameter description
+	  * @param missingDescription
+	  */
+	```
+
+	* __✗ Align thrown exception descriptions__
+	
+   	```xml
+   	<option name="JD_ALIGN_EXCEPTION_COMMENTS" value="false" />
+   	```
+   	```java
+   	/**
+ 	  * @throws XXXException description.
+ 	  * @throws YException description.
+ 	  * @throws ZException
+ 	  */
+	```
+
+▼ __Blank lines__
+
+	* __✓ After parameter descriptions__
+	
+	```xml
+   	<option name="JD_ADD_BLANK_AFTER_PARM_COMMENTS" value="true" />
+   	```
+   	```java
+   	/**
+ 	 * @param missingDescription
+ 	 *
+ 	 * @return return description.
+ 	 */
+	```
+	
+	* __✓ After return tag__
+
+	```xml
+   	<option name="JD_ADD_BLANK_AFTER_RETURN" value="true" />
+   	```
+   	```java
+	 /**
+	  * @param missingDescription
+	  *
+	  * @return return description.
+	  *
+	  * @throws XXXException description.
+	  */  
+	```
+
+▼ __Invalid tags__
+
+
+
+▼ __Other__
 
 
 
@@ -507,17 +618,9 @@ final int localVariable;
 
 
 
-
-   * Blank Lines ▻ In declarations: __`1`__
-   * Blank Lines ▻ In code: __`1`__
-   * Blank Lines ▻ Before } : __`0`__
-   * Blank Lines ▻ Around method in interface: __`0`__
-   * JavaDoc ▻ Alignment
-      * __`✗ Align parameter descriptions`__
-      * __`✗ Align thrown exception descriptions`__
    * JavaDoc ▻ Blank lines
-      * __`✓ After parameter descriptions`__
-      * __`✓ Align return tag`__
+      * __``__
+      * __``__
    * JavaDoc ▻ Invalid tags
       * __`✗ Keep empty @param tags`__
       * __`✗ Keep empty @return tags`__
