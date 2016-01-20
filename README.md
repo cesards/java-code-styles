@@ -810,7 +810,8 @@ __Spaces__
 
 __Layout Files__
 
-   * __✗ Insert blank line before tag__    
+   * __✗ Insert blank line before tag__
+   * 
 	```xml
 	<option name="LAYOUT_SETTINGS">
       <value>
@@ -820,7 +821,9 @@ __Layout Files__
 	```
 
 __Other XML resource files__
-  * __✗ Insert line break before first attribute__    
+  
+   * __✗ Insert line break before first attribute__    
+  
 	```xml
 	<option name="OTHER_SETTINGS">
       <value>
