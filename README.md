@@ -343,12 +343,50 @@ int y = 2 > 3 ?
            <= 2 : "assert description";
    ```
    
+▼ __Assignment statement ⇨ Wrap if long__  
 
+```xml
+<option name="ASSIGNMENT_WRAP" value="1" />
+```
+```java
+int[] a =
+    	new int[]{1, 2, 0x0052, 0x0053, 0x0054};
+``` 
 
-   * Wrapping and Braces ▻ Assignment statement: __`Wrap if long`__
-      * __`✓ Assignment sign on next line`__
-   * Wrapping and Braces ▻ Ternary operation: __`Wrap if long`__
-      * __`✓ ? and : signs on next line`__
+	 * __✓ Assignment sign on next line__
+   
+   ```xml
+   <option name="PLACE_ASSIGNMENT_SIGN_ON_NEXT_LINE" value="true" />
+   ```
+   ```java
+   int[] a
+		      = new int[]{1, 2, 0x0052, 0x0053, 0x0054};
+   ```
+
+▼ __Ternary operation ⇨ Wrap if long__  
+ 
+```xml
+  <option name="TERNARY_OPERATION_WRAP" value="1" />
+```
+```java
+int y = 2 > 3 ? 7 + 8 + 9 :
+     	11 + 12 + 13;
+```  
+
+   * __✓ `?` and `:` signs on next line__
+   
+   ```xml
+   <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true" />
+   ```
+   ```java
+   int y = 2 > 3 ? 7 + 8 + 9
+         : 11 + 12 + 13;
+   ```
+ 
+ 
+ 
+   * Wrapping and Braces ▻ : __`Wrap if long`__
+      * __``__
    * Wrapping and Braces ▻ Array initializer: `Wrap always`
       * __`✓ Align when multiline`__
       * __`✓ New line after {`__
