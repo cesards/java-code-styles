@@ -397,11 +397,9 @@ int[] a = new int[]{1,
 ```
 
    * __✓ New line after `{`__
-   * __✓ Place `}` on new line__
-	
+   
 	```xml
    	<option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
-   	<option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
    	```
    	```java
 	int[] a = new int[]{
@@ -413,16 +411,99 @@ int[] a = new int[]{1,
 	};
    	```
 	
+   * __✓ Place `}` on new line__
+	```xml
+   	<option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
+   	```
+   	```java
+	int[] a = new int[]{1,
+	        2,
+	        0x0052,
+	        0x0053,
+	        0x0054
+	};
+   	```
+   	
+▼ __Assert statement ⇨ Wrap if long__  
+
+```xml
+<option name="ASSERT_STATEMENT_WRAP" value="1" />
+```
+```java
+assert i + j + k + l + n + m <= 2 :
+		"assert description";
+```
+
+	* __✓ `:` signs on next line__
+	```xml
+   	<option name="ASSERT_STATEMENT_COLON_ON_NEXT_LINE" value="true" />
+   	```
+   	```java
+	assert i + j + k + l + n + m <= 2
+        	: "assert description";
+	```
+
+__Enums constants ⇨ Wrap always__  
+
+```xml
+<option name="ENUM_CONSTANTS_WRAP" value="2" />
+```
+```java
+enum Breed {
+    Dalmatian(),
+    Labrador(),
+    Dachshund()
+}
+```
+
+__Parameter anonations ⇨ Wrap if long__  
+
+```xml
+<option name="PARAMETER_ANNOTATION_WRAP" value="1" />
+```
+```java
+public void method(@Annotation1
+                   @Annotation3(param1 = "value1", param2 = "value2")
+                   final int param) {
+```
+
+__Local variable anonations ⇨ Wrap always__  
+
+```xml
+<option name="VARIABLE_ANNOTATION_WRAP" value="2" />
+```
+```java
+@Annotation1
+@Annotation3(param1 = "value1", param2 = "value2")
+final int localVariable;
+```
+
+▼ __Annotation paramters ⇨ Chow down if long__  
+
+```xml
+<option name="ANNOTATION_PARAMETER_WRAP" value="5" />
+```
+```java
+@Annotation3(param1 = "value1",
+        param2 = "value2")
+```
+
+	* __✓ Align when multiline__
+	
+	```xml
+	<option name="ALIGN_MULTILINE_ANNOTATION_PARAMETERS" value="true" />
+	```
+	```java
+	@Annotation3(param1 = "value1",
+    			 param2 = "value2")
+	```
 
 
 
-   * Wrapping and Braces ▻ Assert statement: __`Wrap if long`__
-      * __`✓ ':' signs on next line`__
-   * Wrapping and Braces ▻ Enums constants: __`Wrap always`__
-   * Wrapping and Braces ▻ Parameter anonations: __`Wrap if long`__
-   * Wrapping and Braces ▻ Local variable annotations: __`Wrap always`__
-   * Wrapping and Braces ▻ Annotation parameters: __`Wrap if long`__
-   
+
+
+
+
 
 
 
