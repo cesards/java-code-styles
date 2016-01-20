@@ -126,7 +126,7 @@ Code styles changes from the AS default ones
    ```
 
 
-▼ __Extends / implements list ▶ Wrap if long__
+▼ __Extends / implements list ⇨ Wrap if long__
 
 ```xml
 <option name="EXTENDS_LIST_WRAP" value="1" />
@@ -137,7 +137,7 @@ public class ThisIsASampleClass extends
    I5 {
 ```
 
-   * __Extends / implements keyword ▶ Wrap if long__
+   * __Extends / implements keyword ⇨ Wrap if long__
 
    ```xml
    <option name="EXTENDS_KEYWORD_WRAP" value="1" />
@@ -148,7 +148,7 @@ public class ThisIsASampleClass extends
       implements I1, I2, I3, I4, I5 {
    ```
 
-▼ __Throws list ▶ Wrap if long__
+▼ __Throws list ⇨ Wrap if long__
 
 ```xml
 <option name="THROWS_LIST_WRAP" value="1" />
@@ -159,7 +159,7 @@ public static void longerMethod() throws
    Exception3 {
 ```
 
-   * __Throws keyword ▶ Wrap if long__
+   * __Throws keyword ⇨ Wrap if long__
 
    ```xml
    <option name="THROWS_KEYWORD_WRAP" value="1" />
@@ -169,7 +169,7 @@ public static void longerMethod() throws
       throws Exception1, Exception2, Exception3 {
    ```
 
-▼ __Method declaration parameters ▶ Chop down if long__
+▼ __Method declaration parameters ⇨ Chop down if long__
 
 ```xml
 <option name="METHOD_PARAMETERS_WRAP" value="5" />
@@ -184,7 +184,7 @@ public void foo1(int i1,
                  int i7) {
 ```
 
-▼ __Method call arguments ▶ Chop down if long__
+▼ __Method call arguments ⇨ Chop down if long__
 
 ```xml
 <option name="CALL_PARAMETERS_WRAP" value="5" />
@@ -206,12 +206,12 @@ foo1(0x0051,
    ```
    ```java
    foo1(0x0051,
-        0x0052,
-        0x0053,
-        0x0054,
-        0x0055,
-        0x0056,
-        0x0057);
+         0x0052,
+         0x0053,
+         0x0054,
+         0x0055,
+         0x0056,
+         0x0057);
    ```
 
 ▼ __Chained method calls ▶ Wrap if long__
@@ -221,15 +221,15 @@ foo1(0x0051,
 ```
 ```java
 super.getFoo().foo().getBar()
-               .bar();
+                  .bar();
 ```
 
-   * ____
+* ____
 
-   ```xml
-   ```
-   ```java
-   ```
+```xml
+```
+```java
+```
 
   
   
