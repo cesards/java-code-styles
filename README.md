@@ -247,7 +247,7 @@ super.getFoo().foo().getBar()
 ```
 ```java
 for (int i = 0; i < 0xFFFFFF;
-   i += 2)
+     i += 2)
 ```
   
    * __✗ Align when multiline__
