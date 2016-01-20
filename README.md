@@ -396,8 +396,8 @@ int[] a = new int[]{1,
         0x0054};
 ```
 
-	* __✓ New line after `{`__
-	* __✓ Place `}` on new line__
+   * __✓ New line after `{`__
+   * __✓ Place `}` on new line__
 	
 	```xml
    	<option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
