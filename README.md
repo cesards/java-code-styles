@@ -28,7 +28,6 @@ Code styles changes from the AS default ones
    - <a href="#xml">__XML__</a>
    	  - <a href="#xml_tabs_and_indents">__Tabs and Indents__</a>
    	  - <a href="#other">__Other__</a>
-   	  - <a href="#arrangement">__Arrangement__</a>
    	  - <a href="#android">__Android__</a>
 <br>
 
@@ -740,7 +739,7 @@ __Comment Code__
 <a name="xml">
 ##### XML      
 
-<a name="tabs_and_indents">
+<a name="xml_tabs_and_indents">
 ###### Tabs and Indents
 
    * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
@@ -798,7 +797,7 @@ __✗ Align attrivutes__
    
 __Spaces__   
 
-   * __✗ In empty tag__
+  * __✗ In empty tag__
    ```xml
    <option name="XML_SPACE_INSIDE_EMPTY_TAG" value="false" />
    ```
@@ -806,29 +805,32 @@ __Spaces__
    <option name="workspace"/>
    ```
    
-<a name="arrangement">
-###### Arrangement
-
-
-
 <a name="android">
 ###### Android
 
+__Layout Files__
 
+   * __✗ Insert blank line before tag__    
+	```xml
+	<option name="LAYOUT_SETTINGS">
+      <value>
+        <option name="INSERT_BLANK_LINE_BEFORE_TAG" value="false" />
+      </value>
+    </option>
+	```
 
+__Other XML resource files__
+  * __✗ Insert line break before first attribute__    
+	```xml
+	<option name="OTHER_SETTINGS">
+      <value>
+        <option name="INSERT_LINE_BREAK_BEFORE_FIRST_ATTRIBUTE" value="false" />
+      </value>
+    </option>
+	```
 
-       
-
-
-
-
-   * Arrangement ▻ Additional Settings
-      * __` Use current mode (toggled in the Reformat Code dialog)`__
-   * Android ▻ Layout Files
-      * __`✗ Insert blank line before tag`__
-   * Android ▻ Other XML resource files
-      * Wrap attributes : __`Do not wrap`__
-      * __`✗ Insert line break before first attribute`__
+  
+  
 
 * __Groovy__
    * Tabs and Indents
