@@ -467,7 +467,7 @@ enum Breed {
 }
 ```
 
-__Parameter anonations ⇨ Wrap if long__  
+__Parameter annotations ⇨ Wrap if long__  
 
 ```xml
 <option name="PARAMETER_ANNOTATION_WRAP" value="1" />
@@ -478,7 +478,7 @@ public void method(@Annotation1
                    final int param) {
 ```
 
-__Local variable anonations ⇨ Wrap always__  
+__Local variable annotations ⇨ Wrap always__  
 
 ```xml
 <option name="VARIABLE_ANNOTATION_WRAP" value="2" />
@@ -1047,19 +1047,75 @@ int y = 2 > 3 ?
         11 + 12 + 13;
 ``` 
 
+▼ __Assignment statement ⇨ Wrap if long__  
+
+```xml
+<option name="ASSIGNMENT_WRAP" value="1" />
+```
+```java
+s1 = s2 =
+	s3 = "012345678901456"
+``` 
+
+▼ __Ternary operation ⇨ Wrap if long__  
+ 
+```xml
+<option name="TERNARY_OPERATION_WRAP" value="1" />
+```
+```java
+int y = 2 > 3 ? 7 + 8 + 9 :
+        11 + 12 + 13;
+```
+   	
+▼ __Assert statement ⇨ Wrap if long__  
+
+```xml
+<option name="ASSERT_STATEMENT_WRAP" value="1" />
+```
+```java
+assert i + j + k + l + n + m <= 2 :
+	"assert description";
+```
+
+__Enums constants ⇨ Wrap always__  
+
+```xml
+<option name="ENUM_CONSTANTS_WRAP" value="2" />
+```
+```java
+enum Breed {
+    Dalmatian(),
+    Labrador(),
+    Dachshund()
+}
+```
+
+__Parameter annotations ⇨ Wrap if long__  
+
+```xml
+<option name="PARAMETER_ANNOTATION_WRAP" value="1" />
+```
+```java
+public void method(@Annotation1
+                   @Annotation3(param1 = "value1", param2 = "value2")
+                   final int param) {
+```
+
+__Local variable annotations ⇨ Wrap always__  
+
+```xml
+<option name="VARIABLE_ANNOTATION_WRAP" value="2" />
+```
+```java
+@Annotation1
+@Annotation3(param1 = "value1", param2 = "value2")
+final int localVariable;
+```
 
 
 
 
 
-
-
-   * Wrapping and Braces ▻ Assignment statement: __`Wrap if long`__
-   * Wrapping and Braces ▻ Ternary operation: __`Wrap if long`__
-   * Wrapping and Braces ▻ Assert statement: __`Wrap if long`__
-   * Wrapping and Braces ▻ Enums constants: __`Wrap always`__
-   * Wrapping and Braces ▻ Parameter anonations: __`Wrap if long`__
-   * Wrapping and Braces ▻ Local variable annotations: __`Wrap always`__
    * Blank Lines ▻ In declarations: __`1`__
    * Blank Lines ▻ In code: __`1`__
    * Blank Lines ▻ Before } : __`0`__
@@ -1089,161 +1145,7 @@ int y = 2 > 3 ?
 
 
 
-▼ __Assignment statement ⇨ Wrap if long__  
 
-```xml
-<option name="ASSIGNMENT_WRAP" value="1" />
-```
-```java
-int[] a =
-    	new int[]{1, 2, 0x0052, 0x0053, 0x0054};
-``` 
-
-   * __✓ Assignment sign on next line__
-   
-   ```xml
-   <option name="PLACE_ASSIGNMENT_SIGN_ON_NEXT_LINE" value="true" />
-   ```
-   ```java
-   int[] a
-   			= new int[]{1, 2, 0x0052, 0x0053, 0x0054};
-   ```
-
-▼ __Ternary operation ⇨ Wrap if long__  
- 
-```xml
-<option name="TERNARY_OPERATION_WRAP" value="1" />
-```
-```java
-int y = 2 > 3 ? 7 + 8 + 9 :
-        11 + 12 + 13;
-```  
-
-   * __✓ `?` and `:` signs on next line__
-   
-   ```xml
-   <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true" />
-   ```
-   ```java
-	int y = 2 > 3 ? 7 + 8 + 9
-	        : 11 + 12 + 13;
-   ```
- 
-▼ __Array initializer ⇨ Wrap always__ 
- 
-```xml
-<option name="ARRAY_INITIALIZER_WRAP" value="2" />
-```
-```java
-int[] a = new int[]{1,
-        2,
-        0x0052,
-        0x0053,
-        0x0054};
-```
-
-   * __✓ New line after `{`__
-   
-	```xml
-   	<option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
-   	```
-   	```java
-	int[] a = new int[]{
-	        1,
-	        2,
-	        0x0052,
-	        0x0053,
-	        0x0054
-	};
-   	```
-	
-   * __✓ Place `}` on new line__
-	```xml
-   	<option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
-   	```
-   	```java
-	int[] a = new int[]{1,
-	        2,
-	        0x0052,
-	        0x0053,
-	        0x0054
-	};
-   	```
-   	
-▼ __Assert statement ⇨ Wrap if long__  
-
-```xml
-<option name="ASSERT_STATEMENT_WRAP" value="1" />
-```
-```java
-assert i + j + k + l + n + m <= 2 :
-	"assert description";
-```
-
-   * __✓ `:` signs on next line__
-	
-   	```xml
-   	<option name="ASSERT_STATEMENT_COLON_ON_NEXT_LINE" value="true" />
-   	```
-   	```java
-	assert i + j + k + l + n + m <= 2
-        	: "assert description";
-	```
-
-__Enums constants ⇨ Wrap always__  
-
-```xml
-<option name="ENUM_CONSTANTS_WRAP" value="2" />
-```
-```java
-enum Breed {
-    Dalmatian(),
-    Labrador(),
-    Dachshund()
-}
-```
-
-__Parameter anonations ⇨ Wrap if long__  
-
-```xml
-<option name="PARAMETER_ANNOTATION_WRAP" value="1" />
-```
-```java
-public void method(@Annotation1
-                   @Annotation3(param1 = "value1", param2 = "value2")
-                   final int param) {
-```
-
-__Local variable anonations ⇨ Wrap always__  
-
-```xml
-<option name="VARIABLE_ANNOTATION_WRAP" value="2" />
-```
-```java
-@Annotation1
-@Annotation3(param1 = "value1", param2 = "value2")
-final int localVariable;
-```
-
-▼ __Annotation parameters ⇨ Chow down if long__  
-
-```xml
-<option name="ANNOTATION_PARAMETER_WRAP" value="5" />
-```
-```java
-@Annotation3(param1 = "value1",
-        param2 = "value2")
-```
-
-   * __✓ Align when multiline__
-	
-	```xml
-	<option name="ALIGN_MULTILINE_ANNOTATION_PARAMETERS" value="true" />
-	```
-	```java
-	@Annotation3(param1 = "value1",
-    			 param2 = "value2")
-	```
 
 <a name="blank_lines">
 ###### Blank Lines
