@@ -803,6 +803,7 @@ __Wrap attributes ⇨ Wrap always__
 ```
 
 __✗ Align attrivutes__
+
 ```xml
 <option name="XML_ALIGN_ATTRIBUTES" value="false" />
 ```
@@ -814,6 +815,7 @@ __✗ Align attrivutes__
 __Spaces__   
 
   * __✗ In empty tag__
+
    ```xml
    <option name="XML_SPACE_INSIDE_EMPTY_TAG" value="false" />
    ```
