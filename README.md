@@ -1111,7 +1111,7 @@ __Local variable annotations ⇨ Wrap always__
 final int localVariable;
 ```
 
-<a name="blank_lines">
+<a name="groovy_blank_lines">
 ###### Blank Lines
 
 __In declarations ⇨ 1__  
@@ -1156,7 +1156,7 @@ public void foo1() {
 }
 ```
 
-<a name="java_imports">
+<a name="groovy_imports">
 ###### Imports
    
 __Class count to use import with `*` ⇨ 999__
