@@ -40,10 +40,20 @@ Code styles changes from the AS default ones
 <a name="code_styles">
 #### Code Styles
 
+__Default Options__
+
    * __Right margin (columns) : 120__
 
    	```xml
    	<option name="RIGHT_MARGIN" value="120" />
+   	```
+   	
+__Indents Detection__   
+
+   * __✓ Detect and use existing file indents for editing__
+  
+ 	```xml
+	<option name="AUTODETECT_INDENTS" value="true" />
    	```
 
 <a name="java">
