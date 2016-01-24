@@ -40,10 +40,20 @@ Code styles changes from the AS default ones
 <a name="code_styles">
 #### Code Styles
 
+__Default Options__
+
    * __Right margin (columns) : 120__
 
    	```xml
    	<option name="RIGHT_MARGIN" value="120" />
+   	```
+   	
+__Indents Detection__   
+
+   * __✓ Detect and use existing file indents for editing__
+  
+ 	```xml
+	<option name="AUTODETECT_INDENTS" value="true" />
    	```
 
 <a name="java">
@@ -670,10 +680,20 @@ public void foo1() {
 	 */
 	```
 
+   * __✗ Do not wrap one line commands__
+
+	```xml
+	<option name="JD_DO_NOT_WRAP_ONE_LINE_COMMENTS" value="true" />
+	```
+	```java
+	/** One-line comment */
+  	public abstract String sampleMethod2();
+	```
+
    * __✓ Preserve line feeds__
 
 	```xml
-	  <option name="JD_PRESERVE_LINE_FEEDS" value="true" />
+	<option name="JD_PRESERVE_LINE_FEEDS" value="true" />
 	```
 	```java
 	/**
@@ -793,6 +813,7 @@ __Wrap attributes ⇨ Wrap always__
 ```
 
 __✗ Align attrivutes__
+
 ```xml
 <option name="XML_ALIGN_ATTRIBUTES" value="false" />
 ```
@@ -804,6 +825,7 @@ __✗ Align attrivutes__
 __Spaces__   
 
   * __✗ In empty tag__
+
    ```xml
    <option name="XML_SPACE_INSIDE_EMPTY_TAG" value="false" />
    ```
