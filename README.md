@@ -17,25 +17,25 @@ Code styles changes from the AS default ones
 
 - <a href="#code_styles">__Code Styles__</a>
 	- <a href="#java">__Java__</a> 
-    	- <a href="#java_tabs_and_indents">__Tabs and Indents__</a>
-    	- <a href="#java_spaces">__Spaces__</a>
-    	- <a href="#java_wrapping_and_braces">__Wrapping and Braces__</a>
-    	- <a href="#java_blank_lines">__Blank Lines__</a>
-    	- <a href="#javadoc">__JavaDoc__</a>
-    	- <a href="#java_imports">__Imports__</a>
-    	- <a href="#java_arrangement">__Arrangement__</a>
-    	- <a href="#java_code_generation">__Code Generation__</a>
+		- <a href="#java_tabs_and_indents">__Tabs and Indents__</a>
+		- <a href="#java_spaces">__Spaces__</a>
+		- <a href="#java_wrapping_and_braces">__Wrapping and Braces__</a>
+		- <a href="#java_blank_lines">__Blank Lines__</a>
+		- <a href="#javadoc">__JavaDoc__</a>
+		- <a href="#java_imports">__Imports__</a>
+		- <a href="#java_arrangement">__Arrangement__</a>
+		- <a href="#java_code_generation">__Code Generation__</a>
 	- <a href="#xml">__XML__</a>
-   		- <a href="#xml_tabs_and_indents">__Tabs and Indents__</a>
-   		- <a href="#other">__Other__</a>
-   		- <a href="#android">__Android__</a>
-	- <a href="#groovy">__GroovyL__</a>
+		- <a href="#xml_tabs_and_indents">__Tabs and Indents__</a>
+		- <a href="#other">__Other__</a>
+		- <a href="#android">__Android__</a>
+	- <a href="#groovy">__Groovy__</a>
 		- <a href="#groovy_tabs_and_indents">__Tabs and Indents__</a>
-    	- <a href="#groovy_wrapping_and_braces">__Wrapping and Braces__</a>
-    	- <a href="#groovy_blank_lines">__Blank Lines__</a>
-    	- <a href="#groovy_imports">__Imports__</a>
-    	- <a href="#groovy_arrangement">__Arrangement__</a>
-    	- <a href="#groovy_code_generation">__Code Generation__</a>
+		- <a href="#groovy_wrapping_and_braces">__Wrapping and Braces__</a>
+		- <a href="#groovy_blank_lines">__Blank Lines__</a>
+		- <a href="#groovy_imports">__Imports__</a>
+		- <a href="#groovy_arrangement">__Arrangement__</a>
+		- <a href="#groovy_code_generation">__Code Generation__</a>
 <br>
 
 <a name="code_styles">
