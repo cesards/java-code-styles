@@ -680,10 +680,20 @@ public void foo1() {
 	 */
 	```
 
+   * __✗ Do not wrap one line commands__
+
+	```xml
+	<option name="JD_DO_NOT_WRAP_ONE_LINE_COMMENTS" value="true" />
+	```
+	```java
+	/** One-line comment */
+  	public abstract String sampleMethod2();
+	```
+
    * __✓ Preserve line feeds__
 
 	```xml
-	  <option name="JD_PRESERVE_LINE_FEEDS" value="true" />
+	<option name="JD_PRESERVE_LINE_FEEDS" value="true" />
 	```
 	```java
 	/**
