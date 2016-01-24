@@ -34,8 +34,7 @@ Code styles changes from the AS default ones
 		- <a href="#groovy_wrapping_and_braces">__Wrapping and Braces__</a>
 		- <a href="#groovy_blank_lines">__Blank Lines__</a>
 		- <a href="#groovy_imports">__Imports__</a>
-		- <a href="#groovy_arrangement">__Arrangement__</a>
-		- <a href="#groovy_code_generation">__Code Generation__</a>
+
 <br>
 
 <a name="code_styles">
@@ -1112,41 +1111,6 @@ __Local variable annotations ⇨ Wrap always__
 final int localVariable;
 ```
 
-
-
-
-
-   * Blank Lines ▻ In declarations: __`1`__
-   * Blank Lines ▻ In code: __`1`__
-   * Blank Lines ▻ Before } : __`0`__
-   * Blank Lines ▻ Around method in interface: __`0`__
-   * Imports
-      * __`Class count to use import with *: 999`__
-      * __`Names count to use static import with *: 999`__
-      * Import Layout (3 in total)
-         * __`Import android.*`__
-         * __`Import com.*`__
-         * __`Import junit.*`__
-         * __`Import net.*`__
-         * __`Import org.*`__
-         * __`Import java.*`__
-         * __`Import javax.*`__
-         * __`Import all other imports`__
-         * __`<blank line>`__
-         * __`import static  all other imports`__
-
-
-
-
-
-
-
-
-
-
-
-
-
 <a name="blank_lines">
 ###### Blank Lines
 
@@ -1192,9 +1156,47 @@ public void foo1() {
 }
 ```
 
+<a name="java_imports">
+###### Imports
+   
+__Class count to use import with `*` ⇨ 999__
 
+```xml
+<option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999" />
+```
 
+__Names count to use static import with `*` ⇨ 999__
 
+```xml
+<option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999" />
+```
+
+__Import Layout__
+
+```xml
+<package name="android" withSubpackages="true" static="false" />
+<package name="com" withSubpackages="true" static="false" />
+<package name="junit" withSubpackages="true" static="false" />
+<package name="net" withSubpackages="true" static="false" />
+<package name="org" withSubpackages="true" static="false" />
+<package name="java" withSubpackages="true" static="false" />
+<package name="javax" withSubpackages="true" static="false" />
+<package name="" withSubpackages="true" static="false" />
+<emptyLine />
+<package name="" withSubpackages="true" static="true" />
+```
+```java
+import android.*
+import com.*
+import junit.*
+import net.*
+import org.*
+import java.*
+import javax.*
+import all other imports
+<blank line>
+import static  all other imports
+```
 
 <br>
 
