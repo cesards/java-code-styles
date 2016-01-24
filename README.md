@@ -724,7 +724,7 @@ import java.*
 import javax.*
 import all other imports
 <blank line>
-import static  all other imports
+import static all other imports
 ```
    
 <a name="java_code_generation">
@@ -1195,7 +1195,7 @@ import java.*
 import javax.*
 import all other imports
 <blank line>
-import static  all other imports
+import static all other imports
 ```
 
 <br>
