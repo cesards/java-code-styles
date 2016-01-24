@@ -714,7 +714,7 @@ __Import Layout__
 <emptyLine />
 <package name="" withSubpackages="true" static="true" />
 ```
-```java
+```
 import android.*
 import com.*
 import junit.*
@@ -1185,7 +1185,7 @@ __Import Layout__
 <emptyLine />
 <package name="" withSubpackages="true" static="true" />
 ```
-```java
+```
 import android.*
 import com.*
 import junit.*
