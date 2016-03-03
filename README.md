@@ -844,13 +844,6 @@ import static all other imports
 <a name="java_code_generation">
 ###### Code Generation
 
-__Naming__
-
-    * __✓ Prefer longer names__
-	```xml
-	 <option name="PREFER_LONGER_NAMES" value="true" />
-	```
-
 __Comment Code__
 
     * __✗ Line comment at first column__
