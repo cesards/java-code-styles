@@ -16,18 +16,18 @@ Code styles changes from the AS default ones
 ### CesardsAndroid
 
 - <a href="#code_styles">__Code Styles__</a>
-	- <a href="#java">__Java__</a> 
-		- <a href="#java_tabs_and_indents">__Tabs and Indents__</a>
-		- <a href="#java_spaces">__Spaces__</a>
-		- <a href="#java_wrapping_and_braces">__Wrapping and Braces__</a>
-		- <a href="#java_blank_lines">__Blank Lines__</a>
-		- <a href="#javadoc">__JavaDoc__</a>
-		- <a href="#java_imports">__Imports__</a>
-		- <a href="#java_arrangement">__Arrangement__</a>
-		- <a href="#java_code_generation">__Code Generation__</a>
-	- <a href="#xml">__XML__</a>
-		- <a href="#xml_tabs_and_indents">__Tabs and Indents__</a>
-		- <a href="#other">__Other__</a>
+    - <a href="#java">__Java__</a>
+        - <a href="#java_tabs_and_indents">__Tabs and Indents__</a>
+        - <a href="#java_spaces">__Spaces__</a>
+        - <a href="#java_wrapping_and_braces">__Wrapping and Braces__</a>
+        - <a href="#java_blank_lines">__Blank Lines__</a>
+        - <a href="#javadoc">__JavaDoc__</a>
+        - <a href="#java_imports">__Imports__</a>
+        - <a href="#java_arrangement">__Arrangement__</a>
+        - <a href="#java_code_generation">__Code Generation__</a>
+    - <a href="#xml">__XML__</a>
+        - <a href="#xml_tabs_and_indents">__Tabs and Indents__</a>
+        - <a href="#other">__Other__</a>
 		- <a href="#android">__Android__</a>
 	- <a href="#groovy">__Groovy__</a>
 		- <a href="#groovy_tabs_and_indents">__Tabs and Indents__</a>
@@ -42,16 +42,16 @@ Code styles changes from the AS default ones
 
 __Default Options__
 
-   * __Right margin (columns) : 120__
+    * __Right margin (columns) : 120__
 
-   	```xml
-   	<option name="RIGHT_MARGIN" value="120" />
-   	```
-   	
+    ```xml
+    <option name="RIGHT_MARGIN" value="120" />
+    ```
+
 __Indents Detection__   
 
-   * __✓ Detect and use existing file indents for editing__
-  
+    * __✓ Detect and use existing file indents for editing__
+
  	```xml
 	<option name="AUTODETECT_INDENTS" value="true" />
    	```
@@ -62,8 +62,8 @@ __Indents Detection__
 <a name="java_tabs_and_indents">
 ###### Tabs and Indents
 
-   * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
- 
+    * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
+
    	```xml
    	<indentOptions>
     	<option name="INDENT_SIZE" value="2" />
@@ -77,8 +77,8 @@ __Indents Detection__
 
 ▼__Before Left Brace__
 
-   * __✓ Array initializer left brace__
-   
+    * __✓ Array initializer left brace__
+
    	```xml
    	<option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
    	```
@@ -87,31 +87,31 @@ __Indents Detection__
    	```
 
 ▼ __Within__
-   
-   * __✓ Code braces__
-   
+
+    * __✓ Code braces__
+
    	```xml
    	<option name="SPACE_WITHIN_BRACES" value="true" />
    	```
    	```java
    	interface Abba { }
    	```
-   
-   * __✓ Array initializer braces__
-   
+
+    * __✓ Array initializer braces__
+
    	```xml
    	<option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
    	```
    	```java
    	@SuppressWarnings({ "ALL" })
    	```
-   
+
 <a name="java_wrapping_and_braces">
 ###### Wrapping and Braces   
-   
+
 ▼ __Keep when reformatting__
 
-   * __✗ Comment at first column__
+    * __✗ Comment at first column__
 
    	```xml
    	<option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
@@ -119,9 +119,9 @@ __Indents Detection__
    	```java
    	// todo something
    	```
-   
-   * __✓ Simple methods in one line__
-   
+
+    * __✓ Simple methods in one line__
+
    	```xml
    	<option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
    	```
@@ -134,8 +134,8 @@ __Indents Detection__
                    	int i6,
                    	int i7) {}
    ```
-   
-   * __✓ Simple classes in one line__
+
+    * __✓ Simple classes in one line__
 
    	```xml
    	<option name="KEEP_SIMPLE_CLASSES_IN_ONE_LINE" value="true" />
@@ -177,7 +177,7 @@ public static void longerMethod() throws
    	Exception3 {
 ```
 
-   * __Throws keyword ⇨ Wrap if long__
+    * __Throws keyword ⇨ Wrap if long__
 
    	```xml
    	<option name="THROWS_KEYWORD_WRAP" value="1" />
@@ -202,6 +202,37 @@ public void foo1(int i1,
                  int i7) {
 ```
 
+    * __✓ New line after '('__
+    ```xml
+    <option name="METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    public void foo1(
+      int i1,
+      int i2,
+      int i3,
+      int i4,
+      int i5,
+      int i6,
+      int i7) {}
+    ```
+
+    * __✓ Place ')' on new line__
+    ```xml
+    <option name="METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    public void foo1(
+      int i1,
+      int i2,
+      int i3,
+      int i4,
+      int i5,
+      int i6,
+      int i7
+    ) {}
+    ```
+
 ▼ __Method call arguments ⇨ Chop down if long__
 
 ```xml
@@ -217,47 +248,80 @@ foo1(0x0051,
        0x0057);
 ```
 
-   * __✓ Align when multiline__
+    * __✓ Align when multiline__
 
-   ```xml
-   <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
-   ```
-   ```java
-   foo1(0x0051,
-         0x0052,
-         0x0053,
-         0x0054,
-         0x0055,
-         0x0056,
-         0x0057);
-   ```
+    ```xml
+    <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+    ```
+    ```java
+    foo1(0x0051,
+            0x0052,
+            0x0053,
+            0x0054,
+            0x0055,
+            0x0056,
+            0x0057);
+    ```
 
-▼ __Chained method calls ⇨ Wrap if long__
+    * __✓ New line after '('__
+    ```xml
+    <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    foo1(
+        0x0051,
+        0x0052,
+        0x0053,
+        0x0054,
+        0x0055,
+        0x0056,
+        0x0057);
+    ```
+
+    * __✓ Place ')' on new line__
+    ```xml
+    <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    foo1(
+        0x0051,
+        0x0052,
+        0x0053,
+        0x0054,
+        0x0055,
+        0x0056,
+        0x0057
+    );
+    ```
+
+▼ __Chained method calls ⇨ Chop down if long__
 
 ```xml
-<option name="METHOD_CALL_CHAIN_WRAP" value="1" />
+<option name="METHOD_CALL_CHAIN_WRAP" value="5" />
 ```
 ```java
-super.getFoo().foo().getBar()
-                  .bar();
+super.getFoo()
+    .foo()
+    .getBar()
+    .bar();
 ```
 
 ▼ __`if()` statement__
 
-   * __Force braces ⇨ Always__
+    * __Force braces ⇨ Always__
 
-   ```xml
-   <option name="IF_BRACE_FORCE" value="3" />
-   ```
-   ```java
-   if (2 < 3) {
-      return;
-   } else if (2 > 3) {
-      return;
-   } else {
-      return;
-   }
-   ```
+    ```xml
+    <option name="IF_BRACE_FORCE" value="3" />
+    ```
+    ```java
+    if (2 < 3) {
+        return;
+    } else if (2 > 3) {
+        return;
+    } else {
+        return;
+    }
+    ```
 
 ▼ __`for()` statement ⇨ Wrap if long__
 
@@ -268,53 +332,74 @@ super.getFoo().foo().getBar()
 for (int i = 0; i < 0xFFFFFF;
      i += 2)
 ```
-  
-   * __✗ Align when multiline__
 
-   ```xml
-   <option name="ALIGN_MULTILINE_FOR" value="false" />
-   ```
-   ```java
-  for (int i = 0; i < 0xFFFFFF;
+    * __✗ Align when multiline__
+
+    ```xml
+    <option name="ALIGN_MULTILINE_FOR" value="false" />
+    ```
+    ```java
+    for (int i = 0; i < 0xFFFFFF;
          i += 2)
-   ```
-  
-   * __Force braces ⇨ Always__
+    ```
 
-   ```xml
-   <option name="FOR_BRACE_FORCE" value="3" />
-   ```
-   ```java
-   for (int i = 0; i < 0xFFFFFF; i += 2) {
-      System.out.println(i);
-   }
-   ```
+    * __Force braces ⇨ Always__
+
+    ```xml
+    <option name="FOR_BRACE_FORCE" value="3" />
+    ```
+    ```java
+    for (int i = 0; i < 0xFFFFFF; i += 2) {
+        System.out.println(i);
+    }
+    ```
+
+    * __✓ New line after '('__
+    ```xml
+    <option name="FOR_STATEMENT_LPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    for (
+        int i = 0; i < 0xFFFFFF;
+        i += 2) {
+    ```
+
+    * __✓ Place ')' on new line__
+    ```xml
+    <option name="FOR_STATEMENT_RPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    for (
+        int i = 0; i < 0xFFFFFF;
+        i += 2
+        ) {
+    ```
 
 ▼ __`while()` statement__
 
-   * __Force braces ⇨ Always__
+    * __Force braces ⇨ Always__
 
-   ```xml
-   <option name="WHILE_BRACE_FORCE" value="3" />
-   ```
-   ```java
-   while (x < 50000) {
-      x++;
-   }
-   ```
+    ```xml
+    <option name="WHILE_BRACE_FORCE" value="3" />
+    ```
+    ```java
+    while (x < 50000) {
+        x++;
+    }
+    ```
 
 ▼ __`do { } while()` statement__
 
-   * __Force braces ⇨ Always__
+    * __Force braces ⇨ Always__
 
-   ```xml
-   <option name="DOWHILE_BRACE_FORCE" value="3" />
-   ```
-   ```java
-   do {
-      x++;
-   } while (x < 10000);
-   ```
+    ```xml
+    <option name="DOWHILE_BRACE_FORCE" value="3" />
+    ```
+    ```java
+    do {
+        x++;
+    } while (x < 10000);
+    ```
 
 ▼ __try-with-resources ⇨ Wrap if long__
 
@@ -327,9 +412,25 @@ try (MyResource r1 = getResource();
     doSomething();
 }
 ```
-   
+
+    * __✓ New line after '('__
+    ```xml
+    <option name="RESOURCE_LIST_LPAREN_ON_NEXT_LINE" value="true" />
+    ```
+
+    * __✓ Place ')' on new line__
+    ```xml
+    <option name="RESOURCE_LIST_RPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    try (
+        MyResource r1 = getResource();
+        MyResource r2 = null
+    ) {
+    ```
+
 ▼ __Binary expressions ⇨ Wrap if long__  
-   
+
 ```xml
 <option name="BINARY_OPERATION_WRAP" value="1" />
 ```
@@ -345,23 +446,49 @@ assert i + j + k + l + n +
 int y = 2 > 3 ?
         7 + 8 + 9 :
         11 + 12 + 13;
-``` 
-   
-   * __✓ Operation sign on next line__
-   
-   ```xml
-   <option name="BINARY_OPERATION_SIGN_ON_NEXT_LINE" value="true" />
-   ```
-   ```java
-   int x = (3 + 4 + 5 + 6) * (7
-           + 8 + 9 + 10) * (11
-           + 12 + 13 + 14
-           + 0xFFFFFFFF);
+```
 
-   assert i + j + k + l + n + m
-           <= 2 : "assert description";
-   ```
-   
+    * __✓ Operation sign on next line__
+
+    ```xml
+    <option name="BINARY_OPERATION_SIGN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    int x = (3 + 4 + 5 + 6) * (7
+            + 8 + 9 + 10) * (11
+            + 12 + 13 + 14
+            + 0xFFFFFFFF);
+
+    assert i + j + k + l + n + m
+        <= 2 : "assert description";
+    ```
+
+    * __✓ New line after `{`__
+
+    ```xml
+   	<option name="PARENTHESES_EXPRESSION_LPAREN_WRAP" value="true" />
+   	```
+   	```java
+    int x = (3 + 4 + 5 + 6) * (
+        7 + 8 + 9 + 10) * (
+        11 + 12 + 13 + 14
+            + 0xFFFFFFFF);
+   	```
+
+    * __✓ Place `}` on new line__
+
+    ```xml
+   	<option name="PARENTHESES_EXPRESSION_RPAREN_WRAP" value="true" />
+   	```
+   	```java
+    int x = (3 + 4 + 5 + 6) * (
+        7 + 8 + 9 + 10
+    ) * (
+        11 + 12 + 13 + 14
+            + 0xFFFFFFFF
+    );
+    ```
+
 ▼ __Assignment statement ⇨ Wrap if long__  
 
 ```xml
@@ -370,20 +497,20 @@ int y = 2 > 3 ?
 ```java
 int[] a =
     	new int[]{1, 2, 0x0052, 0x0053, 0x0054};
-``` 
+```
 
-   * __✓ Assignment sign on next line__
-   
-   ```xml
-   <option name="PLACE_ASSIGNMENT_SIGN_ON_NEXT_LINE" value="true" />
-   ```
-   ```java
-   int[] a
-   			= new int[]{1, 2, 0x0052, 0x0053, 0x0054};
-   ```
+    * __✓ Assignment sign on next line__
+
+    ```xml
+    <option name="PLACE_ASSIGNMENT_SIGN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    int[] a
+   	        = new int[]{1, 2, 0x0052, 0x0053, 0x0054};
+    ```
 
 ▼ __Ternary operation ⇨ Wrap if long__  
- 
+
 ```xml
 <option name="TERNARY_OPERATION_WRAP" value="1" />
 ```
@@ -392,18 +519,18 @@ int y = 2 > 3 ? 7 + 8 + 9 :
         11 + 12 + 13;
 ```  
 
-   * __✓ `?` and `:` signs on next line__
-   
-   ```xml
-   <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true" />
-   ```
-   ```java
+    * __✓ `?` and `:` signs on next line__
+
+    ```xml
+    <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
 	int y = 2 > 3 ? 7 + 8 + 9
 	        : 11 + 12 + 13;
-   ```
- 
-▼ __Array initializer ⇨ Wrap always__ 
- 
+    ```
+
+▼ __Array initializer ⇨ Wrap always__
+
 ```xml
 <option name="ARRAY_INITIALIZER_WRAP" value="2" />
 ```
@@ -415,8 +542,8 @@ int[] a = new int[]{1,
         0x0054};
 ```
 
-   * __✓ New line after `{`__
-   
+    * __✓ New line after `{`__
+
 	```xml
    	<option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
    	```
@@ -429,8 +556,8 @@ int[] a = new int[]{1,
 	        0x0054
 	};
    	```
-	
-   * __✓ Place `}` on new line__
+
+    * __✓ Place `}` on new line__
 	```xml
    	<option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
    	```
@@ -441,8 +568,8 @@ int[] a = new int[]{1,
 	        0x0053,
 	        0x0054
 	};
-   	```
-   	
+    ```
+
 ▼ __Assert statement ⇨ Wrap if long__  
 
 ```xml
@@ -453,8 +580,8 @@ assert i + j + k + l + n + m <= 2 :
 	"assert description";
 ```
 
-   * __✓ `:` signs on next line__
-	
+    * __✓ `:` signs on next line__
+
    	```xml
    	<option name="ASSERT_STATEMENT_COLON_ON_NEXT_LINE" value="true" />
    	```
@@ -508,8 +635,8 @@ final int localVariable;
         param2 = "value2")
 ```
 
-   * __✓ Align when multiline__
-	
+    * __✓ Align when multiline__
+
 	```xml
 	<option name="ALIGN_MULTILINE_ANNOTATION_PARAMETERS" value="true" />
 	```
@@ -568,8 +695,8 @@ public void foo1() {
 
 ▼ __Alignment__
 
-   * __✗ Align parameter descriptions__
-	
+    * __✗ Align parameter descriptions__
+
    	```xml
    	<option name="JD_ALIGN_PARAM_COMMENTS" value="false" />
    	```
@@ -581,8 +708,8 @@ public void foo1() {
 	 */
 	```
 
-   * __✗ Align thrown exception descriptions__
-	
+    * __✗ Align thrown exception descriptions__
+
    	```xml
    	<option name="JD_ALIGN_EXCEPTION_COMMENTS" value="false" />
    	```
@@ -597,7 +724,7 @@ public void foo1() {
 ▼ __Blank lines__
 
    * __✓ After parameter descriptions__
-	
+
 	```xml
    	<option name="JD_ADD_BLANK_AFTER_PARM_COMMENTS" value="true" />
    	```
@@ -608,8 +735,8 @@ public void foo1() {
  	 * @return return description.
  	 */
 	```
-	
-   * __✓ After return tag__
+
+    * __✓ After return tag__
 
 	```xml
    	<option name="JD_ADD_BLANK_AFTER_RETURN" value="true" />
@@ -626,27 +753,27 @@ public void foo1() {
 
 ▼ __Invalid tags__
 
-   * __✗ Keep empty `@param` tags__
+    * __✗ Keep empty `@param` tags__
 
 	```xml
    	<option name="JD_KEEP_EMPTY_PARAMETER" value="false" />
    	```
-   
-   * __✗ Keep empty `@return` tags__
- 
+
+    * __✗ Keep empty `@return` tags__
+
 	```xml
 	<option name="JD_KEEP_EMPTY_RETURN" value="false" />
 	```
 
-   * __✗ Keep empty `@throws` tags__
-   
+    * __✗ Keep empty `@throws` tags__
+
 	```xml
 	<option name="JD_KEEP_EMPTY_EXCEPTION" value="false" />
 	```
 
 ▼ __Other__
 
-   * __✓ Wrap at right margin__
+    * __✓ Wrap at right margin__
 
 	```xml
 	<option name="WRAP_COMMENTS" value="true" />
@@ -663,7 +790,7 @@ public void foo1() {
 	 */
 	```
 
-   * __✗ Generate `<p/>` on empty lines__
+    * __✗ Generate `<p/>` on empty lines__
 
 	```xml
   	<option name="JD_P_AT_EMPTY_LINES" value="false" />
@@ -680,7 +807,7 @@ public void foo1() {
 	 */
 	```
 
-   * __✗ Do not wrap one line commands__
+    * __✗ Do not wrap one line comments__
 
 	```xml
 	<option name="JD_DO_NOT_WRAP_ONE_LINE_COMMENTS" value="true" />
@@ -690,7 +817,7 @@ public void foo1() {
   	public abstract String sampleMethod2();
 	```
 
-   * __✓ Preserve line feeds__
+    * __✓ Preserve line feeds__
 
 	```xml
 	<option name="JD_PRESERVE_LINE_FEEDS" value="true" />
@@ -707,7 +834,7 @@ public void foo1() {
 
 <a name="java_imports">
 ###### Imports
-   
+
 __Class count to use import with `*` ⇨ 999__
 
 ```xml
@@ -746,18 +873,18 @@ import all other imports
 <blank line>
 import static all other imports
 ```
-   
+
 <a name="java_code_generation">
 ###### Code Generation
 
 __Comment Code__
 
-   * __✗ Line comment at first column__
+    * __✗ Line comment at first column__
 	```xml
 	<option name="LINE_COMMENT_AT_FIRST_COLUMN" value="false" />
 	```
 
-   * __✗ Block comment at first column__
+    * __✗ Block comment at first column__
 	```xml
 	<option name="BLOCK_COMMENT_AT_FIRST_COLUMN" value="false" />
 	```
@@ -768,8 +895,8 @@ __Comment Code__
 <a name="xml_tabs_and_indents">
 ###### Tabs and Indents
 
-   * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
- 
+    * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
+
    	```xml
    	<indentOptions>
     	<option name="INDENT_SIZE" value="2" />
@@ -781,7 +908,7 @@ __Comment Code__
 ###### Other
 
 __✓ Keep line breaks__
-  
+
 ```xml
 <option name="XML_KEEP_LINE_BREAKS" value="true" />
 ```
@@ -821,10 +948,10 @@ __✗ Align attrivutes__
 <option name="workspace"
 	value="true"/>
 ```
-   
+
 __Spaces__   
 
-  * __✗ In empty tag__
+    * __✗ In empty tag__
 
    ```xml
    <option name="XML_SPACE_INSIDE_EMPTY_TAG" value="false" />
@@ -832,13 +959,13 @@ __Spaces__
    ```xml
    <option name="workspace"/>
    ```
-   
+
 <a name="android">
 ###### Android
 
 __Layout Files__
 
-   * __✗ Insert blank line before tag__
+    * __✗ Insert blank line before tag__
 
 	```xml
 	<option name="LAYOUT_SETTINGS">
@@ -849,9 +976,9 @@ __Layout Files__
 	```
 
 __Other XML resource files__
-  
-   * __✗ Insert line break before first attribute__    
-  
+
+    * __✗ Insert line break before first attribute__    
+
 	```xml
 	<option name="OTHER_SETTINGS">
       <value>
@@ -866,8 +993,8 @@ __Other XML resource files__
 <a name="groovy_tabs_and_indents">
 ###### Tabs and Indents
 
-   * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
- 
+    * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
+
    	```xml
    	<indentOptions>
     	<option name="INDENT_SIZE" value="2" />
@@ -875,13 +1002,13 @@ __Other XML resource files__
       	<option name="TAB_SIZE" value="2" />
    	</indentOptions>
    	```  
- 
+
 <a name="groovy_wrapping_and_braces">
 ###### Wrapping and Braces   
-   
+
 ▼ __Keep when reformatting__
 
-   * __✗ Comment at first column__
+    * __✗ Comment at first column__
 
    	```xml
    	<option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
@@ -911,7 +1038,7 @@ public class ThisIsASampleClass extends
    		extends C1
       	implements I1, I2, I3, I4, I5 {
    	```
- 
+
 ▼ __Throws list ⇨ Wrap if long__
 
 ```xml
@@ -923,7 +1050,7 @@ public static void longerMethod() throws
    	Exception3 {
 ```
 
-   * __Throws keyword ⇨ Wrap if long__
+    * __Throws keyword ⇨ Wrap if long__
 
    	```xml
    	<option name="THROWS_KEYWORD_WRAP" value="1" />
@@ -932,7 +1059,7 @@ public static void longerMethod() throws
    	public static void longerMethod()
       	throws Exception1, Exception2, Exception3 {
    	```
- 
+
 ▼ __Method declaration parameters ⇨ Chop down if long__
 
 ```xml
@@ -947,6 +1074,37 @@ public void foo1(int i1,
                  int i6,
                  int i7) {
 ```
+
+    * __✓ New line after '('__
+    ```xml
+    <option name="METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    public void foo1(
+        int i1,
+        int i2,
+        int i3,
+        int i4,
+        int i5,
+        int i6,
+        int i7) {}
+    ```
+
+    * __✓ Place ')' on new line__
+    ```xml
+    <option name="METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    public void foo1(
+        int i1,
+        int i2,
+        int i3,
+        int i4,
+        int i5,
+        int i6,
+        int i7
+    ) {}
+    ```
 
 ▼ __Method call arguments ⇨ Chop down if long__
 
@@ -963,47 +1121,80 @@ foo1(0x0051,
        0x0057);
 ```
 
-   * __✓ Align when multiline__
+    * __✓ Align when multiline__
 
-   ```xml
-   <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
-   ```
-   ```java
-   foo1(0x0051,
+    ```xml
+    <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+    ```
+    ```java
+    foo1(0x0051,
          0x0052,
          0x0053,
          0x0054,
          0x0055,
          0x0056,
          0x0057);
-   ```
+    ```
+
+    * __✓ New line after '('__
+    ```xml
+    <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    foo1(
+       0x0051,
+       0x0052,
+       0x0053,
+       0x0054,
+       0x0055,
+       0x0056,
+       0x0057);
+    ```
+
+    * __✓ Place ')' on new line__
+    ```xml
+    <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    foo1(
+        0x0051,
+        0x0052,
+        0x0053,
+        0x0054,
+        0x0055,
+        0x0056,
+        0x0057
+    );
+    ```
 
 ▼ __Chained method calls ⇨ Wrap if long__
 
 ```xml
-<option name="METHOD_CALL_CHAIN_WRAP" value="1" />
+<option name="METHOD_CALL_CHAIN_WRAP" value="5" />
 ```
 ```java
-super.getFoo().foo().getBar()
-                  .bar();
+super.getFoo()
+    .foo()
+    .getBar()
+    .bar();
 ```
 
 ▼ __`if()` statement__
 
-   * __Force braces ⇨ Always__
+    * __Force braces ⇨ Always__
 
-   ```xml
-   <option name="IF_BRACE_FORCE" value="3" />
-   ```
-   ```java
-   if (2 < 3) {
-      return;
-   } else if (2 > 3) {
-      return;
-   } else {
-      return;
-   }
-   ```
+    ```xml
+    <option name="IF_BRACE_FORCE" value="3" />
+    ```
+    ```java
+    if (2 < 3) {
+        return;
+    } else if (2 > 3) {
+        return;
+    } else {
+        return;
+    }
+    ```
 
 ▼ __`for()` statement ⇨ Wrap if long__
 
@@ -1014,43 +1205,64 @@ super.getFoo().foo().getBar()
 for (int i = 0; i < 0xFFFFFF;
      i += 2)
 ```
-  
-   * __✗ Align when multiline__
 
-   ```xml
-   <option name="ALIGN_MULTILINE_FOR" value="false" />
-   ```
-   ```java
-  for (int i = 0; i < 0xFFFFFF;
+    * __✗ Align when multiline__
+
+    ```xml
+    <option name="ALIGN_MULTILINE_FOR" value="false" />
+    ```
+    ```java
+    for (int i = 0; i < 0xFFFFFF;
          i += 2)
-   ```
-  
-   * __Force braces ⇨ Always__
+    ```
 
-   ```xml
-   <option name="FOR_BRACE_FORCE" value="3" />
-   ```
-   ```java
-   for (int i = 0; i < 0xFFFFFF; i += 2) {
-      System.out.println(i);
-   }
-   ``` 
+    * __Force braces ⇨ Always__
+
+    ```xml
+    <option name="FOR_BRACE_FORCE" value="3" />
+    ```
+    ```java
+    for (int i = 0; i < 0xFFFFFF; i += 2) {
+        System.out.println(i);
+    }
+    ```
+
+    * __✓ New line after '('__
+    ```xml
+    <option name="FOR_STATEMENT_LPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    for (
+        int i = 0; i < 0xFFFFFF;
+        i += 2) {
+    ```
+
+    * __✓ Place ')' on new line__
+    ```xml
+    <option name="FOR_STATEMENT_RPAREN_ON_NEXT_LINE" value="true" />
+    ```
+    ```java
+    for (
+        int i = 0; i < 0xFFFFFF;
+        i += 2
+        ) {
+    ```
 
 ▼ __`while()` statement__
 
-   * __Force braces ⇨ Always__
+    * __Force braces ⇨ Always__
 
-   ```xml
-   <option name="WHILE_BRACE_FORCE" value="3" />
-   ```
-   ```java
-   while (x < 50000) {
-      x++;
-   }
-   ```
-   
+    ```xml
+    <option name="WHILE_BRACE_FORCE" value="3" />
+    ```
+    ```java
+    while (x < 50000) {
+        x++;
+    }
+    ```
+
 ▼ __Binary expressions ⇨ Wrap if long__  
-   
+
 ```xml
 <option name="BINARY_OPERATION_WRAP" value="1" />
 ```
@@ -1066,7 +1278,33 @@ assert i + j + k + l + n +
 int y = 2 > 3 ?
         7 + 8 + 9 :
         11 + 12 + 13;
-``` 
+```
+
+    * __✓ New line after `{`__
+
+    ```xml
+    <option name="PARENTHESES_EXPRESSION_LPAREN_WRAP" value="true" />
+    ```
+    ```java
+    int x = (3 + 4 + 5 + 6) * (
+        7 + 8 + 9 + 10) * (
+        11 + 12 + 13 + 14
+            + 0xFFFFFFFF);
+    ```
+
+    * __✓ Place `}` on new line__
+
+    ```xml
+    <option name="PARENTHESES_EXPRESSION_RPAREN_WRAP" value="true" />
+    ```
+    ```java
+    int x = (3 + 4 + 5 + 6) * (
+        7 + 8 + 9 + 10
+    ) * (
+        11 + 12 + 13 + 14
+            + 0xFFFFFFFF
+    );
+    ```
 
 ▼ __Assignment statement ⇨ Wrap if long__  
 
@@ -1076,10 +1314,10 @@ int y = 2 > 3 ?
 ```java
 s1 = s2 =
 	s3 = "012345678901456"
-``` 
+```
 
 ▼ __Ternary operation ⇨ Wrap if long__  
- 
+
 ```xml
 <option name="TERNARY_OPERATION_WRAP" value="1" />
 ```
@@ -1087,7 +1325,7 @@ s1 = s2 =
 int y = 2 > 3 ? 7 + 8 + 9 :
         11 + 12 + 13;
 ```
-   	
+
 ▼ __Assert statement ⇨ Wrap if long__  
 
 ```xml
@@ -1180,7 +1418,7 @@ public void foo1() {
 
 <a name="groovy_imports">
 ###### Imports
-   
+
 __Class count to use import with `*` ⇨ 999__
 
 ```xml
