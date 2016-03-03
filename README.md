@@ -34,19 +34,11 @@ Code styles changes from the AS default ones
 		- <a href="#groovy_wrapping_and_braces">__Wrapping and Braces__</a>
 		- <a href="#groovy_blank_lines">__Blank Lines__</a>
 		- <a href="#groovy_imports">__Imports__</a>
-
+-
 <br>
 
 <a name="code_styles">
 #### Code Styles
-
-__Default Options__
-
-    * __Right margin (columns) : 120__
-
-    ```xml
-    <option name="RIGHT_MARGIN" value="120" />
-    ```
 
 __Indents Detection__   
 
@@ -247,21 +239,6 @@ foo1(0x0051,
        0x0056,
        0x0057);
 ```
-
-    * __✓ Align when multiline__
-
-    ```xml
-    <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
-    ```
-    ```java
-    foo1(0x0051,
-            0x0052,
-            0x0053,
-            0x0054,
-            0x0055,
-            0x0056,
-            0x0057);
-    ```
 
     * __✓ New line after '('__
     ```xml
@@ -634,16 +611,6 @@ final int localVariable;
 @Annotation3(param1 = "value1",
         param2 = "value2")
 ```
-
-    * __✓ Align when multiline__
-
-	```xml
-	<option name="ALIGN_MULTILINE_ANNOTATION_PARAMETERS" value="true" />
-	```
-	```java
-	@Annotation3(param1 = "value1",
-    			 param2 = "value2")
-	```
 
 <a name="java_blank_lines">
 ###### Blank Lines
@@ -1121,21 +1088,6 @@ foo1(0x0051,
        0x0057);
 ```
 
-    * __✓ Align when multiline__
-
-    ```xml
-    <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
-    ```
-    ```java
-    foo1(0x0051,
-         0x0052,
-         0x0053,
-         0x0054,
-         0x0055,
-         0x0056,
-         0x0057);
-    ```
-
     * __✓ New line after '('__
     ```xml
     <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
@@ -1178,6 +1130,18 @@ super.getFoo()
     .getBar()
     .bar();
 ```
+
+    * __✓ Wrap first call__
+    ```xml
+    <option name="WRAP_FIRST_METHOD_IN_CALL_CHAIN" value="true" />
+    ```
+    ```java
+    super
+        .getFoo()
+        .foo()
+        .getBar()
+        .bar();
+    ```
 
 ▼ __`if()` statement__
 
@@ -1444,7 +1408,7 @@ __Import Layout__
 <package name="" withSubpackages="true" static="false" />
 <emptyLine />
 <package name="" withSubpackages="true" static="true" />
-```
+``` 
 ```
 import android.*
 import com.*
@@ -1459,6 +1423,11 @@ import static all other imports
 ```
 
 <br>
+
+<a name="related_sources">
+#### Related sources
+
+- [Android Code Styles comparison](https://github.com/ogaclejapan/android-code-styles)
 
 License
 -------
