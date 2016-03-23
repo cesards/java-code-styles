@@ -1486,7 +1486,7 @@ __Import Layout__
 <package name="" withSubpackages="true" static="false" />
 <emptyLine />
 <package name="" withSubpackages="true" static="true" />
-``` 
+```
 ```java
 import android.*
 import com.*
