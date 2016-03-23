@@ -43,7 +43,8 @@ Code styles changes from the AS default ones
 __Indents Detection__   
 
 - __✓ Detect and use existing file indents for editing__
- 	```xml
+
+    ```xml
 	<option name="AUTODETECT_INDENTS" value="true" />
    	```
 
@@ -102,7 +103,7 @@ __Indents Detection__
 
 ▼ __Keep when reformatting__
 
-    * __✗ Comment at first column__
+- __✗ Comment at first column__
 
    	```xml
    	<option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
@@ -111,7 +112,7 @@ __Indents Detection__
    	// todo something
    	```
 
-    * __✓ Simple methods in one line__
+- __✓ Simple methods in one line__
 
    	```xml
    	<option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
@@ -126,7 +127,7 @@ __Indents Detection__
                    	int i7) {}
    ```
 
-    * __✓ Simple classes in one line__
+- __✓ Simple classes in one line__
 
    	```xml
    	<option name="KEEP_SIMPLE_CLASSES_IN_ONE_LINE" value="true" />
@@ -146,7 +147,7 @@ public class ThisIsASampleClass extends
    	I5 {
 ```
 
-   * __Extends / implements keyword ⇨ Wrap if long__
+- __Extends / implements keyword ⇨ Wrap if long__
 
    ```xml
    <option name="EXTENDS_KEYWORD_WRAP" value="1" />
@@ -168,7 +169,7 @@ public static void longerMethod() throws
    	Exception3 {
 ```
 
-    * __Throws keyword ⇨ Wrap if long__
+- __Throws keyword ⇨ Wrap if long__
 
    	```xml
    	<option name="THROWS_KEYWORD_WRAP" value="1" />
@@ -193,7 +194,7 @@ public void foo1(int i1,
                  int i7) {
 ```
 
-    * __✓ New line after '('__
+- __✓ New line after '('__
 
     ```xml
     <option name="METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
@@ -209,7 +210,7 @@ public void foo1(int i1,
       int i7) {}
     ```
 
-    * __✓ Place ')' on new line__
+- __✓ Place ')' on new line__
 
     ```xml
     <option name="METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
@@ -241,7 +242,7 @@ foo1(0x0051,
        0x0057);
 ```
 
-    * __✓ New line after '('__
+- __✓ New line after '('__
 
     ```xml
     <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
@@ -257,7 +258,7 @@ foo1(0x0051,
         0x0057);
     ```
 
-    * __✓ Place ')' on new line__
+- __✓ Place ')' on new line__
 
     ```xml
     <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
@@ -288,7 +289,7 @@ super.getFoo()
 
 ▼ __`if()` statement__
 
-    * __Force braces ⇨ Always__
+- __Force braces ⇨ Always__
 
     ```xml
     <option name="IF_BRACE_FORCE" value="3" />
@@ -313,7 +314,7 @@ for (int i = 0; i < 0xFFFFFF;
      i += 2)
 ```
 
-    * __✗ Align when multiline__
+- __✗ Align when multiline__
 
     ```xml
     <option name="ALIGN_MULTILINE_FOR" value="false" />
@@ -323,7 +324,7 @@ for (int i = 0; i < 0xFFFFFF;
          i += 2)
     ```
 
-    * __Force braces ⇨ Always__
+- __Force braces ⇨ Always__
 
     ```xml
     <option name="FOR_BRACE_FORCE" value="3" />
@@ -334,7 +335,7 @@ for (int i = 0; i < 0xFFFFFF;
     }
     ```
 
-    * __✓ New line after '('__
+- __✓ New line after '('__
 
     ```xml
     <option name="FOR_STATEMENT_LPAREN_ON_NEXT_LINE" value="true" />
@@ -345,7 +346,7 @@ for (int i = 0; i < 0xFFFFFF;
         i += 2) {
     ```
 
-    * __✓ Place ')' on new line__
+- __✓ Place ')' on new line__
 
     ```xml
     <option name="FOR_STATEMENT_RPAREN_ON_NEXT_LINE" value="true" />
@@ -359,7 +360,7 @@ for (int i = 0; i < 0xFFFFFF;
 
 ▼ __`while()` statement__
 
-    * __Force braces ⇨ Always__
+- __Force braces ⇨ Always__
 
     ```xml
     <option name="WHILE_BRACE_FORCE" value="3" />
@@ -372,7 +373,7 @@ for (int i = 0; i < 0xFFFFFF;
 
 ▼ __`do { } while()` statement__
 
-    * __Force braces ⇨ Always__
+- __Force braces ⇨ Always__
 
     ```xml
     <option name="DOWHILE_BRACE_FORCE" value="3" />
@@ -395,13 +396,13 @@ try (MyResource r1 = getResource();
 }
 ```
 
-    * __✓ New line after '('__
+- __✓ New line after '('__
 
     ```xml
     <option name="RESOURCE_LIST_LPAREN_ON_NEXT_LINE" value="true" />
     ```
 
-    * __✓ Place ')' on new line__
+- __✓ Place ')' on new line__
 
     ```xml
     <option name="RESOURCE_LIST_RPAREN_ON_NEXT_LINE" value="true" />
@@ -432,7 +433,7 @@ int y = 2 > 3 ?
         11 + 12 + 13;
 ```
 
-    * __✓ Operation sign on next line__
+- __✓ Operation sign on next line__
 
     ```xml
     <option name="BINARY_OPERATION_SIGN_ON_NEXT_LINE" value="true" />
@@ -447,7 +448,7 @@ int y = 2 > 3 ?
         <= 2 : "assert description";
     ```
 
-    * __✓ New line after `{`__
+- __✓ New line after `{`__
 
     ```xml
    	<option name="PARENTHESES_EXPRESSION_LPAREN_WRAP" value="true" />
@@ -459,7 +460,7 @@ int y = 2 > 3 ?
             + 0xFFFFFFFF);
    	```
 
-    * __✓ Place `}` on new line__
+- __✓ Place `}` on new line__
 
     ```xml
    	<option name="PARENTHESES_EXPRESSION_RPAREN_WRAP" value="true" />
@@ -483,7 +484,7 @@ int[] a =
     	new int[]{1, 2, 0x0052, 0x0053, 0x0054};
 ```
 
-    * __✓ Assignment sign on next line__
+- __✓ Assignment sign on next line__
 
     ```xml
     <option name="PLACE_ASSIGNMENT_SIGN_ON_NEXT_LINE" value="true" />
@@ -503,7 +504,7 @@ int y = 2 > 3 ? 7 + 8 + 9 :
         11 + 12 + 13;
 ```  
 
-    * __✓ `?` and `:` signs on next line__
+- __✓ `?` and `:` signs on next line__
 
     ```xml
     <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true" />
@@ -526,7 +527,7 @@ int[] a = new int[]{1,
         0x0054};
 ```
 
-    * __✓ New line after `{`__
+- __✓ New line after `{`__
 
 	```xml
    	<option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
@@ -541,7 +542,7 @@ int[] a = new int[]{1,
 	};
    	```
 
-    * __✓ Place `}` on new line__
+- __✓ Place `}` on new line__
 
 	```xml
    	<option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
@@ -565,7 +566,7 @@ assert i + j + k + l + n + m <= 2 :
 	"assert description";
 ```
 
-    * __✓ `:` signs on next line__
+- __✓ `:` signs on next line__
 
    	```xml
    	<option name="ASSERT_STATEMENT_COLON_ON_NEXT_LINE" value="true" />
@@ -684,7 +685,7 @@ interface TestInterface {
 
 ▼ __Alignment__
 
-    * __✗ Align parameter descriptions__
+- __✗ Align parameter descriptions__
 
    	```xml
    	<option name="JD_ALIGN_PARAM_COMMENTS" value="false" />
@@ -697,7 +698,7 @@ interface TestInterface {
 	 */
 	```
 
-    * __✗ Align thrown exception descriptions__
+- __✗ Align thrown exception descriptions__
 
    	```xml
    	<option name="JD_ALIGN_EXCEPTION_COMMENTS" value="false" />
@@ -712,7 +713,7 @@ interface TestInterface {
 
 ▼ __Blank lines__
 
-   * __✓ After parameter descriptions__
+- __✓ After parameter descriptions__
 
 	```xml
    	<option name="JD_ADD_BLANK_AFTER_PARM_COMMENTS" value="true" />
@@ -725,7 +726,7 @@ interface TestInterface {
  	 */
 	```
 
-    * __✓ After return tag__
+- __✓ After return tag__
 
 	```xml
    	<option name="JD_ADD_BLANK_AFTER_RETURN" value="true" />
@@ -742,19 +743,19 @@ interface TestInterface {
 
 ▼ __Invalid tags__
 
-    * __✗ Keep empty `@param` tags__
+- __✗ Keep empty `@param` tags__
 
 	```xml
    	<option name="JD_KEEP_EMPTY_PARAMETER" value="false" />
    	```
 
-    * __✗ Keep empty `@return` tags__
+- __✗ Keep empty `@return` tags__
 
 	```xml
 	<option name="JD_KEEP_EMPTY_RETURN" value="false" />
 	```
 
-    * __✗ Keep empty `@throws` tags__
+- __✗ Keep empty `@throws` tags__
 
 	```xml
 	<option name="JD_KEEP_EMPTY_EXCEPTION" value="false" />
@@ -762,7 +763,7 @@ interface TestInterface {
 
 ▼ __Other__
 
-    * __✓ Wrap at right margin__
+- __✓ Wrap at right margin__
 
 	```xml
 	<option name="WRAP_COMMENTS" value="true" />
@@ -779,7 +780,7 @@ interface TestInterface {
 	 */
 	```
 
-    * __✗ Generate `<p/>` on empty lines__
+- __✗ Generate `<p/>` on empty lines__
 
 	```xml
   	<option name="JD_P_AT_EMPTY_LINES" value="false" />
@@ -796,7 +797,7 @@ interface TestInterface {
 	 */
 	```
 
-    * __✗ Do not wrap one line comments__
+- __✗ Do not wrap one line comments__
 
 	```xml
 	<option name="JD_DO_NOT_WRAP_ONE_LINE_COMMENTS" value="true" />
@@ -806,7 +807,7 @@ interface TestInterface {
   	public abstract String sampleMethod2();
 	```
 
-    * __✓ Preserve line feeds__
+- __✓ Preserve line feeds__
 
 	```xml
 	<option name="JD_PRESERVE_LINE_FEEDS" value="true" />
@@ -868,7 +869,7 @@ import static all other imports
 
 __Grouping rules__
 
-    * __✓ Keep getters and setters together__
+- __✓ Keep getters and setters together__
 
     ```xml
     <group>
@@ -877,7 +878,7 @@ __Grouping rules__
     </group>
     ```
 
-    * __✓ Keep overriden methods together (keep order)__
+- __✓ Keep overriden methods together (keep order)__
 
     ```xml
     <group>
@@ -891,7 +892,7 @@ __Grouping rules__
 
 __Final Modifier__
 
-    * __✓ Make generated local variables final__
+- __✓ Make generated local variables final__
 
     ```xml
     <option name="GENERATE_FINAL_LOCALS" value="true" />
@@ -899,13 +900,13 @@ __Final Modifier__
 
 __Comment Code__
 
-    * __✗ Line comment at first column__
+- __✗ Line comment at first column__
 
 	```xml
 	<option name="LINE_COMMENT_AT_FIRST_COLUMN" value="false" />
 	```
 
-    * __✗ Block comment at first column__
+- __✗ Block comment at first column__
 
 	```xml
 	<option name="BLOCK_COMMENT_AT_FIRST_COLUMN" value="false" />
@@ -913,7 +914,7 @@ __Comment Code__
 
 __Default Visibility__
 
-    * __✓ Package local__
+- __✓ Package local__
 
     ```xml
     <option name="VISIBILITY" value="packageLocal" />
@@ -925,7 +926,7 @@ __Default Visibility__
 <a name="xml_tabs_and_indents">
 ###### Tabs and Indents
 
-    * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
+- __Tab size: 2 / Indent: 2 / Continuation indent: 4__
 
    	```xml
    	<indentOptions>
@@ -981,7 +982,7 @@ __✗ Align attrivutes__
 
 __Spaces__   
 
-    * __✗ In empty tag__
+- __✗ In empty tag__
 
    ```xml
    <option name="XML_SPACE_INSIDE_EMPTY_TAG" value="false" />
@@ -995,7 +996,7 @@ __Spaces__
 
 __Layout Files__
 
-    * __✗ Insert blank line before tag__
+- __✗ Insert blank line before tag__
 
 	```xml
 	<option name="LAYOUT_SETTINGS">
@@ -1007,7 +1008,7 @@ __Layout Files__
 
 __Other XML resource files__
 
-    * __✗ Insert line break before first attribute__    
+- __✗ Insert line break before first attribute__    
 
 	```xml
 	<option name="OTHER_SETTINGS">
@@ -1023,7 +1024,7 @@ __Other XML resource files__
 <a name="groovy_tabs_and_indents">
 ###### Tabs and Indents
 
-    * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
+- __Tab size: 2 / Indent: 2 / Continuation indent: 4__
 
    	```xml
    	<indentOptions>
@@ -1038,7 +1039,7 @@ __Other XML resource files__
 
 ▼ __Keep when reformatting__
 
-    * __✗ Comment at first column__
+- __✗ Comment at first column__
 
    	```xml
    	<option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
@@ -1058,7 +1059,7 @@ public class ThisIsASampleClass extends
    	I5 {
 ```
 
-   * __Extends / implements keyword ⇨ Wrap if long__
+- __Extends / implements keyword ⇨ Wrap if long__
 
    ```xml
    <option name="EXTENDS_KEYWORD_WRAP" value="1" />
@@ -1080,7 +1081,7 @@ public static void longerMethod() throws
    	Exception3 {
 ```
 
-    * __Throws keyword ⇨ Wrap if long__
+- __Throws keyword ⇨ Wrap if long__
 
    	```xml
    	<option name="THROWS_KEYWORD_WRAP" value="1" />
@@ -1105,7 +1106,7 @@ public void foo1(int i1,
                  int i7) {
 ```
 
-    * __✓ New line after '('__
+- __✓ New line after '('__
     ```xml
     <option name="METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -1120,7 +1121,7 @@ public void foo1(int i1,
         int i7) {}
     ```
 
-    * __✓ Place ')' on new line__
+- __✓ Place ')' on new line__
     ```xml
     <option name="METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -1151,7 +1152,7 @@ foo1(0x0051,
        0x0057);
 ```
 
-    * __✓ New line after '('__
+- __✓ New line after '('__
     ```xml
     <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -1166,7 +1167,7 @@ foo1(0x0051,
        0x0057);
     ```
 
-    * __✓ Place ')' on new line__
+- __✓ Place ')' on new line__
     ```xml
     <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -1194,7 +1195,7 @@ super.getFoo()
     .bar();
 ```
 
-    * __✓ Wrap first call__
+- __✓ Wrap first call__
     ```xml
     <option name="WRAP_FIRST_METHOD_IN_CALL_CHAIN" value="true" />
     ```
@@ -1208,7 +1209,7 @@ super.getFoo()
 
 ▼ __`if()` statement__
 
-    * __Force braces ⇨ Always__
+- __Force braces ⇨ Always__
 
     ```xml
     <option name="IF_BRACE_FORCE" value="3" />
@@ -1233,7 +1234,7 @@ for (int i = 0; i < 0xFFFFFF;
      i += 2)
 ```
 
-    * __✗ Align when multiline__
+- __✗ Align when multiline__
 
     ```xml
     <option name="ALIGN_MULTILINE_FOR" value="false" />
@@ -1243,7 +1244,7 @@ for (int i = 0; i < 0xFFFFFF;
          i += 2)
     ```
 
-    * __Force braces ⇨ Always__
+- __Force braces ⇨ Always__
 
     ```xml
     <option name="FOR_BRACE_FORCE" value="3" />
@@ -1254,7 +1255,7 @@ for (int i = 0; i < 0xFFFFFF;
     }
     ```
 
-    * __✓ New line after '('__
+- __✓ New line after '('__
     ```xml
     <option name="FOR_STATEMENT_LPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -1264,7 +1265,7 @@ for (int i = 0; i < 0xFFFFFF;
         i += 2) {
     ```
 
-    * __✓ Place ')' on new line__
+- __✓ Place ')' on new line__
     ```xml
     <option name="FOR_STATEMENT_RPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -1277,7 +1278,7 @@ for (int i = 0; i < 0xFFFFFF;
 
 ▼ __`while()` statement__
 
-    * __Force braces ⇨ Always__
+- __Force braces ⇨ Always__
 
     ```xml
     <option name="WHILE_BRACE_FORCE" value="3" />
@@ -1307,7 +1308,7 @@ int y = 2 > 3 ?
         11 + 12 + 13;
 ```
 
-    * __✓ New line after `{`__
+- __✓ New line after `{`__
 
     ```xml
     <option name="PARENTHESES_EXPRESSION_LPAREN_WRAP" value="true" />
@@ -1319,7 +1320,7 @@ int y = 2 > 3 ?
             + 0xFFFFFFFF);
     ```
 
-    * __✓ Place `}` on new line__
+- __✓ Place `}` on new line__
 
     ```xml
     <option name="PARENTHESES_EXPRESSION_RPAREN_WRAP" value="true" />
