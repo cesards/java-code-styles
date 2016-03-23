@@ -195,6 +195,7 @@ public void foo1(int i1,
 ```
 
     * __✓ New line after '('__
+
     ```xml
     <option name="METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -210,6 +211,7 @@ public void foo1(int i1,
     ```
 
     * __✓ Place ')' on new line__
+
     ```xml
     <option name="METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -241,6 +243,7 @@ foo1(0x0051,
 ```
 
     * __✓ New line after '('__
+
     ```xml
     <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -256,6 +259,7 @@ foo1(0x0051,
     ```
 
     * __✓ Place ')' on new line__
+
     ```xml
     <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -332,6 +336,7 @@ for (int i = 0; i < 0xFFFFFF;
     ```
 
     * __✓ New line after '('__
+
     ```xml
     <option name="FOR_STATEMENT_LPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -342,6 +347,7 @@ for (int i = 0; i < 0xFFFFFF;
     ```
 
     * __✓ Place ')' on new line__
+
     ```xml
     <option name="FOR_STATEMENT_RPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -391,11 +397,13 @@ try (MyResource r1 = getResource();
 ```
 
     * __✓ New line after '('__
+
     ```xml
     <option name="RESOURCE_LIST_LPAREN_ON_NEXT_LINE" value="true" />
     ```
 
     * __✓ Place ')' on new line__
+
     ```xml
     <option name="RESOURCE_LIST_RPAREN_ON_NEXT_LINE" value="true" />
     ```
@@ -535,6 +543,7 @@ int[] a = new int[]{1,
    	```
 
     * __✓ Place `}` on new line__
+
 	```xml
    	<option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
    	```
@@ -654,6 +663,20 @@ public void foo1() {
         public void run() {
         }
     };
+}
+```
+
+__Around method interface ⇨ 0__
+
+```xml
+<option name="BLANK_LINES_AROUND_METHOD_IN_INTERFACE" value="0" />
+```
+```java
+interface TestInterface {
+  int MAX = 10;
+  int MIN = 1;
+  void method1();
+  void method2();
 }
 ```
 
@@ -841,20 +864,61 @@ import all other imports
 import static all other imports
 ```
 
+<a name="java_arrangement">
+###### Arrangement
+
+__Grouping rules__
+
+    * __✓ Keep getters and setters together__
+
+    ```xml
+    <group>
+        <type>GETTERS_AND_SETTERS</type>
+        <order>KEEP</order>
+    </group>
+    ```
+
+    * __✓ Keep overriden methods together (keep order)__
+
+    ```xml
+    <group>
+        <type>OVERRIDDEN_METHODS</type>
+        <order>KEEP</order>
+    </group>
+
+
 <a name="java_code_generation">
 ###### Code Generation
+
+__Final Modifier__
+
+    * __✓ Make generated local variables final__
+
+    ```xml
+    <option name="GENERATE_FINAL_LOCALS" value="true" />
+    ```
 
 __Comment Code__
 
     * __✗ Line comment at first column__
+
 	```xml
 	<option name="LINE_COMMENT_AT_FIRST_COLUMN" value="false" />
 	```
 
     * __✗ Block comment at first column__
+
 	```xml
 	<option name="BLOCK_COMMENT_AT_FIRST_COLUMN" value="false" />
 	```
+
+__Default Visibility__
+
+    * __✓ Package local__
+
+    ```xml
+    <option name="VISIBILITY" value="packageLocal" />
+    ```
 
 <a name="xml">
 ##### XML      
@@ -1377,6 +1441,20 @@ public void foo1() {
         public void run() {
         }
     };
+}
+```
+
+__Around method interface ⇨ 0__
+
+```xml
+<option name="BLANK_LINES_AROUND_METHOD_IN_INTERFACE" value="0" />
+```
+```java
+interface TestInterface {
+  int MAX = 10
+  int MIN = 1
+  def method1()
+  void method2()
 }
 ```
 
