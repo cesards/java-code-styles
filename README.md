@@ -34,7 +34,7 @@ Code styles changes from the AS default ones
 		- <a href="#groovy_wrapping_and_braces">__Wrapping and Braces__</a>
 		- <a href="#groovy_blank_lines">__Blank Lines__</a>
 		- <a href="#groovy_imports">__Imports__</a>
--
+
 <br>
 
 <a name="code_styles">
@@ -54,8 +54,7 @@ __Indents Detection__
 <a name="java_tabs_and_indents">
 ###### Tabs and Indents
 
-    * __Tab size: 2 / Indent: 2 / Continuation indent: 4__
-
+    - __Tab size: 2 / Indent: 2 / Continuation indent: 4__
    	```xml
    	<indentOptions>
     	<option name="INDENT_SIZE" value="2" />
