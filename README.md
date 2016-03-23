@@ -885,7 +885,7 @@ __Grouping rules__
         <type>OVERRIDDEN_METHODS</type>
         <order>KEEP</order>
     </group>
-
+    ```
 
 <a name="java_code_generation">
 ###### Code Generation
@@ -1196,6 +1196,7 @@ super.getFoo()
 ```
 
 - __✓ Wrap first call__
+
     ```xml
     <option name="WRAP_FIRST_METHOD_IN_CALL_CHAIN" value="true" />
     ```
