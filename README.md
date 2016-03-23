@@ -42,8 +42,7 @@ Code styles changes from the AS default ones
 
 __Indents Detection__   
 
-    * __✓ Detect and use existing file indents for editing__
-
+- __✓ Detect and use existing file indents for editing__
  	```xml
 	<option name="AUTODETECT_INDENTS" value="true" />
    	```
@@ -54,8 +53,9 @@ __Indents Detection__
 <a name="java_tabs_and_indents">
 ###### Tabs and Indents
 
-    - __Tab size: 2 / Indent: 2 / Continuation indent: 4__
-   	```xml
+- __Tab size: 2 / Indent: 2 / Continuation indent: 4__
+
+    ```xml
    	<indentOptions>
     	<option name="INDENT_SIZE" value="2" />
       	<option name="CONTINUATION_INDENT_SIZE" value="4" />
@@ -68,7 +68,7 @@ __Indents Detection__
 
 ▼__Before Left Brace__
 
-    * __✓ Array initializer left brace__
+- __✓ Array initializer left brace__
 
    	```xml
    	<option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
@@ -79,7 +79,7 @@ __Indents Detection__
 
 ▼ __Within__
 
-    * __✓ Code braces__
+- __✓ Code braces__
 
    	```xml
    	<option name="SPACE_WITHIN_BRACES" value="true" />
@@ -88,7 +88,7 @@ __Indents Detection__
    	interface Abba { }
    	```
 
-    * __✓ Array initializer braces__
+- __✓ Array initializer braces__
 
    	```xml
    	<option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
